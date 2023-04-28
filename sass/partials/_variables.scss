@@ -2,16 +2,38 @@
 // ====================== //
 //         COLORS         //
 // ====================== //
+
 $black: #151515;
 $gray: #242424;
 $light-gray: #D9D9D9;
-$white: #FFFFFF;  
+$white: #FFFFFF;
 $green: #4EE1A0; 
 
 // ====================== //
-//          TYPO          //
+//       FONT-WEIGHT      //
 // ====================== //
 
-$fs: 'Space Grotesk', sans serif;
 $fw-b: 700;
 $fw-m: 500;
+
+// ====================== //
+//          RESET         //
+// ====================== //
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+    font-size: 1rem;
+    box-sizing: border-box;
+    font-family: 'Space Grotesk', sans serif;
+}
+  
+body{
+    background-color: $light-gray;
+}
+
