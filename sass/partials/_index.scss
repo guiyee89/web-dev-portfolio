@@ -8,9 +8,114 @@
     flex-direction: column;
     align-items: center;
     margin: 1rem;
-    
-    div > .logo{
+    z-index: 1;
+    position: relative;
+
+    div .logo{
         color: $white;
         padding: 1rem;
+        position: relative
     }
+    .social-media a img{
+        margin: auto 10px;
+    }
+}
+//    =====================     //
+//             Hero             //
+//    =====================     //
+.hero{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    top: -120px;
+
+    .rings{
+        position: absolute;
+        margin-top: 150px;
+        margin-right: 500px;
+        z-index: -1;
+    }
+    picture{
+        img{
+            width: clamp(200px,50vw,400px);
+        }
+    }
+    .circle{
+        position: absolute;
+        bottom: 300px;
+        right: -70px;
+    }
+
+    /* TITLE - TEXT - BTN */
+    .text-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+        h1{
+            margin-top: 30px;
+            font-size: 2.2rem;
+            color: $white;
+            text-align: center;
+            padding: 15px;
+            span{
+                border-bottom: 4px solid $green;
+            }
+        }
+        p{
+            padding: 15px;
+            text-align: center;
+        }
+        button{
+            background-color: $black;
+            border: none;
+            color: $white;
+            border-bottom: 2px solid $green;
+            padding-bottom: 10px;
+            margin-top: 20px;
+            font-weight: bold;
+            font-size: 1rem;
+            letter-spacing: 1.5px;
+            cursor: pointer;
+        }
+    }
+}
+//    =====================     //
+//             Main             //
+//    =====================     //
+main{
+    /* width: clamp(12rem,50vh,18rem); */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 30px;
+    margin-top: -35px;
+
+    .skills-container{
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        border-top: 2px solid $light-gray;
+        border-bottom: 2px solid $light-gray;
+        width:  100%;
+        align-items: center;
+
+        .skills{
+            padding: 15px;
+        }
+        .skills:nth-child(1){
+            padding-top: 50px;
+        }
+        .skills:nth-child(6){
+            padding-bottom: 50px;
+        }
+    }
+}
+
+//===== SOLO RINGS =====//
+.solo-rings{
+    position: absolute;
+    bottom: -550px;
+    right: -300px;
 }

@@ -10,12 +10,13 @@
 
 html {
   font-size: 1rem;
+  color: #D9D9D9;
   box-sizing: border-box;
   font-family: "Space Grotesk", sans serif;
 }
 
 body {
-  background-color: #D9D9D9;
+  background-color: #151515;
 }
 
 .header {
@@ -23,10 +24,103 @@ body {
   flex-direction: column;
   align-items: center;
   margin: 1rem;
+  z-index: 1;
+  position: relative;
 }
-.header div > .logo {
+.header div .logo {
   color: #FFFFFF;
   padding: 1rem;
+  position: relative;
+}
+.header .social-media a img {
+  margin: auto 10px;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  top: -120px;
+  /* TITLE - TEXT - BTN */
+}
+.hero .rings {
+  position: absolute;
+  margin-top: 150px;
+  margin-right: 500px;
+  z-index: -1;
+}
+.hero picture img {
+  width: clamp(200px, 50vw, 400px);
+}
+.hero .circle {
+  position: absolute;
+  bottom: 300px;
+  right: -70px;
+}
+.hero .text-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.hero .text-container h1 {
+  margin-top: 30px;
+  font-size: 2.2rem;
+  color: #FFFFFF;
+  text-align: center;
+  padding: 15px;
+}
+.hero .text-container h1 span {
+  border-bottom: 4px solid #4EE1A0;
+}
+.hero .text-container p {
+  padding: 15px;
+  text-align: center;
+}
+.hero .text-container button {
+  background-color: #151515;
+  border: none;
+  color: #FFFFFF;
+  border-bottom: 2px solid #4EE1A0;
+  padding-bottom: 10px;
+  margin-top: 20px;
+  font-weight: bold;
+  font-size: 1rem;
+  letter-spacing: 1.5px;
+  cursor: pointer;
+}
+
+main {
+  /* width: clamp(12rem,50vh,18rem); */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 30px;
+  margin-top: -35px;
+}
+main .skills-container {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  border-top: 2px solid #D9D9D9;
+  border-bottom: 2px solid #D9D9D9;
+  width: 100%;
+  align-items: center;
+}
+main .skills-container .skills {
+  padding: 15px;
+}
+main .skills-container .skills:nth-child(1) {
+  padding-top: 50px;
+}
+main .skills-container .skills:nth-child(6) {
+  padding-bottom: 50px;
+}
+
+.solo-rings {
+  position: absolute;
+  bottom: -550px;
+  right: -300px;
 }
 
 *,
@@ -39,12 +133,13 @@ body {
 
 html {
   font-size: 1rem;
+  color: #D9D9D9;
   box-sizing: border-box;
   font-family: "Space Grotesk", sans serif;
 }
 
 body {
-  background-color: #D9D9D9;
+  background-color: #151515;
 }
 
 /*# sourceMappingURL=style.css.map */
