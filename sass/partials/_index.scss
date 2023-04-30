@@ -1,5 +1,4 @@
 @import "./variables";
-
 //    =====================     //
 //            Header            //
 //    =====================     //
@@ -103,6 +102,10 @@ main{
 
         .skills{
             padding: 15px;
+
+            h2{
+                color: $white;
+            }
         }
         .skills:nth-child(1){
             padding-top: 50px;
@@ -112,10 +115,38 @@ main{
         }
     }
 }
-
-//===== SOLO RINGS =====//
+//  =====   SOLO RINGS   =====  //
 .solo-rings{
     position: absolute;
-    bottom: -550px;
-    right: -300px;
+    bottom: -520px;
+    right: -370px;
+}
+//    =====================     //
+//         Mid Section          //
+//         Title + Btn          //
+//    =====================     //
+.mid-container{
+    margin: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80vw;
+
+    h1{
+        font-size: 2.2rem;
+        color: $light-gray;
+
+    }
+    button{
+        background-color: $black;
+        border: none;
+        color: $light-gray;
+        border-bottom: 2px solid $green;
+        padding-bottom: 10px;
+        margin-top: 20px;
+        font-weight: bold;
+        font-size: .8rem;
+        letter-spacing: 1.5px;
+        cursor: pointer;
+    }
 }
