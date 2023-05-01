@@ -25,7 +25,7 @@ body {
   flex-direction: column;
   align-items: center;
   margin: 20px;
-  z-index: 1;
+  z-index: 2;
   position: relative;
 }
 .header div .logo {
@@ -39,16 +39,10 @@ body {
   margin: 20px 10px;
 }
 
-.header::after {
-  content: url(/assets/images/pattern-rings.svg);
-  position: absolute;
-  bottom: -160px;
-  right: 170px;
-}
-
 .hero {
   top: -120px;
   position: relative;
+  z-index: 1;
   /* Make overflowing img to be absolute to it's relative containing block */
   /* TITLE - TEXT - BTN */
 }
@@ -57,32 +51,43 @@ body {
   grid-template-columns: 1fr;
   justify-items: center;
   position: relative;
-  z-index: -1;
 }
 .hero .profile-container::after {
   content: url(/assets/images/pattern-circle.svg);
   position: absolute;
-  bottom: 270px;
+  bottom: -25px;
   right: -60px;
 }
 .hero picture img {
-  width: clamp(200px, 50vw, 400px);
+  width: clamp(200px, 50vw, 450px);
 }
 .hero h1 {
   margin-top: 30px;
-  font-size: clamp(2.2rem, 5vw + 1rem, 3.5rem);
+  font-size: clamp(2.2rem, 5vw + 1.6rem, 5.5rem);
   color: #FFFFFF;
   text-align: center;
-  padding: 15px;
+  padding: 25px;
 }
 .hero h1 span {
   border-bottom: 4px solid #4EE1A0;
 }
-.hero p {
+.hero h1::after {
+  content: url(/assets/images/pattern-rings.svg);
+  position: absolute;
+  top: 128px;
+  right: 200px;
+  z-index: -1;
+}
+.hero .text-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.hero .text-container p {
   padding: 15px;
   text-align: center;
 }
-.hero button {
+.hero .text-container button {
   background-color: transparent;
   border: none;
   color: #FFFFFF;
@@ -294,15 +299,86 @@ footer .footer-container .social-media a img {
   }
   .hero {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    align-items: end;
+    max-height: 750px;
   }
-  .hero .profile-picture-container {
-    grid-column: 4/6;
-    grid-row: 1/2;
+  .hero .profile-container {
+    grid-column: 4/7;
+    grid-row: 1/5;
+  }
+  .hero h1 {
+    grid-column: 1/5;
+    grid-row: 3/4;
+    text-align: left;
+    z-index: 2;
+    margin-bottom: 50px;
+  }
+  .hero h1::after {
+    right: 450px;
+    top: 162px;
   }
   .hero .text-container {
-    grid-column: 1/5;
-    grid-row: 1/2;
+    grid-column: 1/4;
+    grid-row: 4/5;
+  }
+  .hero .text-container p {
+    font-size: 1.2rem;
+    text-align: left;
+    padding: 0 0 20px 20px;
+  }
+  .hero .text-container button {
+    margin-left: -150px;
+  }
+}
+@media screen and (min-width: 62.5rem) {
+  body {
+    margin-left: calc(5vw + 15px);
+    margin-right: calc(5vw + 20px);
+  }
+  .header {
+    margin: 25px 35px 30px 120px;
+  }
+  .hero {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    align-items: end;
+    max-height: 750px;
+  }
+  .hero .profile-container {
+    grid-column: 9/13;
+    grid-row: 1/7;
+  }
+  .hero .profile-container::after {
+    left: -70px;
+    bottom: 20px;
+  }
+  .hero h1 {
+    grid-column: 2/11;
+    grid-row: 3/4;
+    text-align: left;
+    z-index: 2;
+    margin-bottom: 50px;
+    width: 900px;
+  }
+  .hero h1::after {
+    right: calc(54vw + 130px) !important;
+    top: 124px;
+  }
+  .hero .text-container {
+    grid-column: 2/7;
+    grid-row: 4/5;
+  }
+  .hero .text-container p {
+    font-size: 1.2rem;
+    text-align: left;
+    padding: 0 0 20px 20px;
+    margin: 0 66px 0 0;
+  }
+  .hero .text-container button {
+    margin-left: -240px;
   }
 }
 * *,
