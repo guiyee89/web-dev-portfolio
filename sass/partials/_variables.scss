@@ -19,7 +19,7 @@ $fw-m: 500;
 // ====================== //
 //          RESET         //
 // ====================== //
-*,
+* *,
 *::after,
 *::before {
   box-sizing: inherit;
@@ -36,5 +36,7 @@ html {
   
 body{
     background-color: $black;
+    overflow-x: hidden; /* To avoid overflowing due to style img */
 }
 
+ 
