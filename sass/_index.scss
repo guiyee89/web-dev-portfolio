@@ -33,14 +33,43 @@
         grid-template-columns: 1fr;
         justify-items: center;
         position: relative;
-
+        
         /* Make overflowing img to be absolute to it's relative containing block */
-        &::after{
+        /* &::after{
             content: url(../assets/images/pattern-circle.svg);
             position: absolute;
             bottom: -25px;
             right: -60px;
+        } */
+        .profile-circle{
+            position: absolute;
+            bottom: 60px;
+            right: 400px;
+            overflow: hidden;
+            @media only screen and (min-width: 75rem){
+                position: absolute;
+                bottom: 60px;
+                right: 259px;
+                overflow: hidden;
+            }
+            @media only screen and (min-width: 81rem){
+                position: absolute;
+                bottom: 40px;
+                right: 339px;
+                overflow: hidden;
+            }
+            @media only screen and (min-width: 93rem){
+                position: absolute;
+                bottom: 50px;
+                right: 399px;
+                overflow: hidden;
+            }
         }
+    }
+    .profile-rings{
+        position: absolute;
+        top: 140px;
+        left: -160px;
     }
     picture{
         img{
@@ -59,13 +88,13 @@
         span{
             border-bottom: 4px solid$green;
         }
-        &::after{
+        /* &::after{
             content: url(../assets/images/pattern-rings.svg);
             position: absolute;
             top: 128px;
             right: 200px;
             z-index: -1;
-        }
+        } */
     }
     .text-container{
         display: flex;
@@ -111,12 +140,18 @@ main{
         align-items: center;
         position: relative;
 
-        &::after{
+        .skills-rings{
+            position: absolute;
+            bottom: -30px;
+            right: -320px;
+            overflow: hidden;
+        }
+        /* &::after{
             content: url(../assets/images/pattern-rings.svg);
             position: absolute;
             bottom: -50px;
             right: -390px;
-        }
+        } */
 
         .skills{
             padding: 15px;
@@ -366,10 +401,6 @@ footer{
 //   =====================    //
 
 @media screen and (min-width: 62.5rem){
-    body{
-        margin-left: calc(5vw + 15px);
-        margin-right: calc(5vw + 20px);
-    }
     .header{
         margin: 25px 35px 30px 120px
     }

@@ -51,12 +51,47 @@ body {
   justify-items: center;
   position: relative;
   /* Make overflowing img to be absolute to it's relative containing block */
+  /* &::after{
+      content: url(../assets/images/pattern-circle.svg);
+      position: absolute;
+      bottom: -25px;
+      right: -60px;
+  } */
 }
-.hero .profile-container::after {
-  content: url(../assets/images/pattern-circle.svg);
+.hero .profile-container .profile-circle {
   position: absolute;
-  bottom: -25px;
-  right: -60px;
+  bottom: 60px;
+  right: 400px;
+  overflow: hidden;
+}
+@media only screen and (min-width: 75rem) {
+  .hero .profile-container .profile-circle {
+    position: absolute;
+    bottom: 60px;
+    right: 259px;
+    overflow: hidden;
+  }
+}
+@media only screen and (min-width: 81rem) {
+  .hero .profile-container .profile-circle {
+    position: absolute;
+    bottom: 40px;
+    right: 339px;
+    overflow: hidden;
+  }
+}
+@media only screen and (min-width: 93rem) {
+  .hero .profile-container .profile-circle {
+    position: absolute;
+    bottom: 50px;
+    right: 399px;
+    overflow: hidden;
+  }
+}
+.hero .profile-rings {
+  position: absolute;
+  top: 140px;
+  left: -160px;
 }
 .hero picture img {
   width: clamp(200px, 50vw, 450px);
@@ -67,16 +102,16 @@ body {
   color: #FFFFFF;
   text-align: center;
   padding: 25px;
+  /* &::after{
+      content: url(../assets/images/pattern-rings.svg);
+      position: absolute;
+      top: 128px;
+      right: 200px;
+      z-index: -1;
+  } */
 }
 .hero h1 span {
   border-bottom: 4px solid #4EE1A0;
-}
-.hero h1::after {
-  content: url(../assets/images/pattern-rings.svg);
-  position: absolute;
-  top: 128px;
-  right: 200px;
-  z-index: -1;
 }
 .hero .text-container {
   display: flex;
@@ -116,12 +151,18 @@ main .skills-container {
   width: calc(75vw + 10px);
   align-items: center;
   position: relative;
+  /* &::after{
+      content: url(../assets/images/pattern-rings.svg);
+      position: absolute;
+      bottom: -50px;
+      right: -390px;
+  } */
 }
-main .skills-container::after {
-  content: url(../assets/images/pattern-rings.svg);
+main .skills-container .skills-rings {
   position: absolute;
-  bottom: -50px;
-  right: -390px;
+  bottom: -30px;
+  right: -320px;
+  overflow: hidden;
 }
 main .skills-container .skills {
   padding: 15px;
@@ -332,10 +373,6 @@ footer .footer-container .social-media a img {
   }
 }
 @media screen and (min-width: 62.5rem) {
-  body {
-    margin-left: calc(5vw + 15px);
-    margin-right: calc(5vw + 20px);
-  }
   .header {
     margin: 25px 35px 30px 120px;
   }
