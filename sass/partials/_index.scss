@@ -33,13 +33,14 @@
         grid-template-columns: 1fr;
         justify-items: center;
         position: relative;
-    }
-    /* Make overflowing img to be absolute to it's relative containing block */
-    .profile-container::after{
-        content: url(../../assets/images/pattern-circle.svg);
-        position: absolute;
-        bottom: -25px;
-        right: -60px;
+
+        /* Make overflowing img to be absolute to it's relative containing block */
+        &::after{
+            content: url(../../assets/images/pattern-circle.svg);
+            position: absolute;
+            bottom: -25px;
+            right: -60px;
+        }
     }
     picture{
         img{
@@ -58,13 +59,13 @@
         span{
             border-bottom: 4px solid$green;
         }
-    }
-    h1::after{
-        content: url(../../assets/images/pattern-rings.svg);
-        position: absolute;
-        top: 128px;
-        right: 200px;
-        z-index: -1;
+        &::after{
+            content: url(../../assets/images/pattern-rings.svg);
+            position: absolute;
+            top: 128px;
+            right: 200px;
+            z-index: -1;
+        }
     }
     .text-container{
         display: flex;
@@ -110,6 +111,13 @@ main{
         align-items: center;
         position: relative;
 
+        &::after{
+            content: url(../../assets/images/pattern-rings.svg);
+            position: absolute;
+            bottom: -50px;
+            right: -390px;
+        }
+
         .skills{
             padding: 15px;
 
@@ -125,12 +133,7 @@ main{
             padding-bottom: 50px;
         }
     }
-    .skills-container::after{
-        content: url(../../assets/images/pattern-rings.svg);
-        position: absolute;
-        bottom: -50px;
-        right: -390px;
-    }
+    
 }
 //  =====   SOLO RINGS   =====  //
 .solo-rings{

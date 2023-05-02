@@ -43,7 +43,6 @@ body {
   top: -120px;
   position: relative;
   z-index: 1;
-  /* Make overflowing img to be absolute to it's relative containing block */
   /* TITLE - TEXT - BTN */
 }
 .hero .profile-container {
@@ -51,6 +50,7 @@ body {
   grid-template-columns: 1fr;
   justify-items: center;
   position: relative;
+  /* Make overflowing img to be absolute to it's relative containing block */
 }
 .hero .profile-container::after {
   content: url(../../assets/images/pattern-circle.svg);
@@ -118,6 +118,12 @@ main .skills-container {
   align-items: center;
   position: relative;
 }
+main .skills-container::after {
+  content: url(../../assets/images/pattern-rings.svg);
+  position: absolute;
+  bottom: -50px;
+  right: -390px;
+}
 main .skills-container .skills {
   padding: 15px;
 }
@@ -130,12 +136,6 @@ main .skills-container .skills:nth-child(1) {
 }
 main .skills-container .skills:nth-child(6) {
   padding-bottom: 50px;
-}
-main .skills-container::after {
-  content: url(../../assets/images/pattern-rings.svg);
-  position: absolute;
-  bottom: -50px;
-  right: -390px;
 }
 
 .solo-rings {
