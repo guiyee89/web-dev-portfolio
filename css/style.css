@@ -100,7 +100,6 @@ body {
   cursor: pointer;
 }
 
-/* } */
 main {
   display: flex;
   flex-direction: column;
