@@ -36,7 +36,7 @@
 
         /* Make overflowing img to be absolute to it's relative containing block */
         &::after{
-            content: url(../../assets/images/pattern-circle.svg);
+            content: url(../assets/images/pattern-circle.svg);
             position: absolute;
             bottom: -25px;
             right: -60px;
@@ -60,7 +60,7 @@
             border-bottom: 4px solid$green;
         }
         &::after{
-            content: url(../../assets/images/pattern-rings.svg);
+            content: url(../assets/images/pattern-rings.svg);
             position: absolute;
             top: 128px;
             right: 200px;
@@ -112,7 +112,7 @@ main{
         position: relative;
 
         &::after{
-            content: url(../../assets/images/pattern-rings.svg);
+            content: url(../assets/images/pattern-rings.svg);
             position: absolute;
             bottom: -50px;
             right: -390px;
