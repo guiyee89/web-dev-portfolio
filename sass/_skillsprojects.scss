@@ -1,0 +1,123 @@
+@import "./base";
+
+//    =====================     //
+//             Main             //
+//    =====================     //
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+    margin-top: -35px;
+    
+    
+    .skills-container{
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        border-top: 2px solid $light-gray;
+        border-bottom: 2px solid $light-gray;
+        width: calc(75vw + 10px);
+        align-items: center;
+        position: relative;
+
+        .skills-rings{
+            position: absolute;
+            bottom: -30px;
+            right: -320px;
+            overflow: hidden;
+        }
+
+        .skills{
+            padding: 15px;
+
+            h2{
+                text-align: center;
+                color: $white;
+            }
+        }
+        .skills:nth-child(1){
+            padding-top: 50px;
+        }
+        .skills:nth-child(6){
+            padding-bottom: 50px;
+        }
+    }
+    
+}
+
+//    =====================     //
+//         Mid Section          //
+//         Title + Btn          //
+//    =====================     //
+.mid-container{
+    margin: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 85vw;
+    
+
+    h2{
+        font-size: clamp(2.2rem, 5vw + 1.5rem, 6rem);
+        color: $light-gray;
+
+    }
+    button{
+        background-color: transparent;
+        border: none;
+        color: $light-gray;
+        border-bottom: 2px solid $green;
+        padding-bottom: 10px;
+        margin-top: 20px;
+        font-weight: bold;
+        font-size: .8rem;
+        letter-spacing: 1.5px;
+        cursor: pointer;
+    }
+}
+//    =====================     //
+//          Projects            //
+//    =====================     //
+.projects-container{
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: -5px;
+    
+    .project-img picture img {
+        max-width: 100%;
+      }
+    .project-text{
+        margin-left: 6px;
+        h3{
+            padding: 7px 0;
+            color: $white;
+            font-size: clamp(1.2rem , 2.5vw + .15rem, 1.8rem);
+        }
+        h4{
+            span{
+                padding: 7px 0;
+                margin-right: 10px;
+                color: $light-gray;
+            }
+        }
+    }
+    .project-button {
+        margin-bottom: 20px;
+        margin-left: 6px;
+        button{
+            background-color: transparent;
+            border: none;
+            color: $white;
+            border-bottom: 2px solid $green;
+            padding-bottom: 10px;
+            margin-top: 20px;
+            margin-right: 25px;
+            font-weight: 600;
+            font-size: .8rem;
+            letter-spacing: 1.5px;
+            cursor: pointer;    
+            margin-bottom: 25px;
+        }
+    }
+}

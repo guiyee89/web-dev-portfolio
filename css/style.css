@@ -1,5 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&display=swap");
 * *,
 *::after,
 *::before {
@@ -13,114 +16,309 @@ html {
   color: #D9D9D9;
   box-sizing: border-box;
   font-family: "Space Grotesk", sans serif;
+  width: 100%;
+  /* height: 100%; */
+  overflow-x: hidden;
 }
 
 body {
   background-color: #151515;
+  width: 100%;
   overflow-x: hidden; /* To avoid overflowing due to style img */
 }
 
-.header {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 20px;
-  z-index: 2;
-  position: relative;
+/* @import "./base";
+
+//    =====================     //
+//            Header            //
+//    =====================     //
+.header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+    z-index: 2;
+    position: relative;
+
+    div .logo{
+        color: $white;
+        margin: 10px 10px;
+        position: relative;
+        text-decoration: none;
+         font-size: 1.4rem;
+    }
+    .social-media a img{
+        margin: 20px 10px;
+    }
+
+    @media only screen and (min-width: $bp-first){
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    @media only screen and (min-width: $bp-tab){
+        justify-content: space-between;
+    }
+} */
+* *,
+*::after,
+*::before {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
 }
-.header div .logo {
-  color: #FFFFFF;
-  margin: 10px 10px;
-  position: relative;
-  text-decoration: none;
-  font-size: 1.4rem;
+
+html {
+  font-size: 1rem;
+  color: #D9D9D9;
+  box-sizing: border-box;
+  font-family: "Space Grotesk", sans serif;
+  width: 100%;
+  /* height: 100%; */
+  overflow-x: hidden;
 }
-.header .social-media a img {
-  margin: 20px 10px;
+
+body {
+  background-color: #151515;
+  width: 100%;
+  overflow-x: hidden; /* To avoid overflowing due to style img */
 }
 
 .hero {
-  top: -120px;
+  display: grid;
   position: relative;
   z-index: 1;
-  /* TITLE - TEXT - BTN */
+  margin-bottom: 50px;
+  /* @media only screen and (min-width: $bp-first){
+      grid-template-columns: 1fr;
+  } */
+  /*  TITLE CONTAINER */
+  /* TEXT - BTN */
+}
+@media only screen and (min-width: 42rem) {
+  .hero {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    max-height: 800px;
+  }
+}
+.hero .header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 34px;
+  z-index: 2;
+  margin-bottom: -130px;
+  position: relative;
+}
+.hero .header div .logo {
+  color: #FFFFFF;
+  margin: 10px 10px;
+  text-decoration: none;
+  font-size: 1.4rem;
+}
+.hero .header .social-media {
+  display: flex;
+}
+.hero .header .social-media a img {
+  display: flex;
+  margin: 20px 10px;
+}
+@media only screen and (min-width: 42rem) {
+  .hero .header {
+    justify-content: space-around;
+    flex-direction: row;
+    grid-column: 1/7;
+    grid-row: 1/1;
+  }
+  .hero .header .social-media {
+    display: flex;
+  }
+}
+@media only screen and (min-width: 50.5rem) {
+  .hero .header {
+    justify-content: space-between;
+  }
+}
+@media only screen and (min-width: 62.5rem) {
+  .hero .header {
+    justify-content: space-around;
+  }
+}
+@media only screen and (min-width: 49.37rem) {
+  .hero .header {
+    margin-bottom: 0;
+  }
 }
 .hero .profile-container {
-  display: grid;
-  grid-template-columns: 1fr;
-  justify-items: center;
+  margin: 0 auto;
   position: relative;
-  /* Make overflowing img to be absolute to it's relative containing block */
-  /* &::after{
-      content: url(../assets/images/pattern-circle.svg);
-      position: absolute;
-      bottom: -25px;
-      right: -60px;
-  } */
+}
+.hero .profile-container picture img {
+  width: clamp(200px, 47vw, 450px);
+}
+@media only screen and (min-width: 42rem) {
+  .hero .profile-container {
+    grid-column: 4/6;
+    grid-row: 1/-1;
+  }
+}
+@media only screen and (min-width: 65rem) {
+  .hero .profile-container {
+    grid-column: 4/7;
+  }
 }
 .hero .profile-container .profile-circle {
   position: absolute;
-  bottom: 60px;
-  right: 400px;
+  bottom: -20px;
+  right: -120px;
   overflow: hidden;
+}
+@media only screen and (min-width: 42rem) {
+  .hero .profile-container .profile-circle {
+    bottom: 80px;
+    right: -60px;
+  }
 }
 @media only screen and (min-width: 75rem) {
   .hero .profile-container .profile-circle {
-    position: absolute;
     bottom: 60px;
     right: 259px;
-    overflow: hidden;
   }
 }
 @media only screen and (min-width: 81rem) {
   .hero .profile-container .profile-circle {
-    position: absolute;
     bottom: 40px;
     right: 339px;
-    overflow: hidden;
   }
 }
 @media only screen and (min-width: 93rem) {
   .hero .profile-container .profile-circle {
-    position: absolute;
     bottom: 50px;
     right: 399px;
-    overflow: hidden;
   }
 }
-.hero .profile-rings {
-  position: absolute;
-  top: 140px;
-  left: -160px;
+.hero .title {
+  position: relative;
+  text-align: center;
 }
-.hero picture img {
-  width: clamp(200px, 50vw, 450px);
+@media only screen and (min-width: 42rem) {
+  .hero .title {
+    grid-column: 1/5;
+    grid-row: 3/4;
+    text-align: left;
+  }
+  .hero .title h1 {
+    padding: 25px 25px 25px 15px;
+  }
 }
-.hero h1 {
-  margin-top: 30px;
+@media only screen and (min-width: 57rem) {
+  .hero .title {
+    margin-left: 10px;
+  }
+}
+@media only screen and (min-width: 79.5rem) {
+  .hero .title {
+    margin-left: 40px;
+  }
+}
+@media only screen and (min-width: 82rem) {
+  .hero .title {
+    margin-left: 60px;
+  }
+}
+@media only screen and (min-width: 89.5rem) {
+  .hero .title {
+    margin-left: 130px;
+  }
+}
+@media only screen and (min-width: 100rem) {
+  .hero .title {
+    margin-left: 180px;
+  }
+}
+@media only screen and (min-width: 119rem) {
+  .hero .title {
+    margin-left: 220px;
+  }
+}
+.hero .title h1 {
   font-size: clamp(2.2rem, 5vw + 1.6rem, 5.5rem);
   color: #FFFFFF;
-  text-align: center;
   padding: 25px;
-  /* &::after{
-      content: url(../assets/images/pattern-rings.svg);
-      position: absolute;
-      top: 128px;
-      right: 200px;
-      z-index: -1;
-  } */
 }
-.hero h1 span {
+.hero .title h1 span {
   border-bottom: 4px solid #4EE1A0;
+}
+.hero .title .profile-rings {
+  position: absolute;
+  bottom: 415px;
+  left: -360px;
+  z-index: -1;
+}
+@media only screen and (min-width: 42rem) {
+  .hero .title .profile-rings {
+    bottom: 202px;
+    left: -297px;
+  }
 }
 .hero .text-container {
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: center;
+  position: relative;
+}
+@media only screen and (min-width: 42rem) {
+  .hero .text-container {
+    grid-column: 1/4;
+    grid-row: 4/6;
+    align-items: flex-start;
+  }
+}
+@media only screen and (min-width: 57rem) {
+  .hero .text-container {
+    margin-left: 20px;
+  }
+}
+@media only screen and (min-width: 79.5rem) {
+  .hero .text-container {
+    margin-left: 40px;
+  }
+}
+@media only screen and (min-width: 82rem) {
+  .hero .text-container {
+    margin-left: 60px;
+  }
+}
+@media only screen and (min-width: 89.5rem) {
+  .hero .text-container {
+    margin-left: 130px;
+  }
+}
+@media only screen and (min-width: 100rem) {
+  .hero .text-container {
+    margin-left: 180px;
+  }
+}
+@media only screen and (min-width: 119rem) {
+  .hero .text-container {
+    margin-left: 220px;
+  }
 }
 .hero .text-container p {
   padding: 15px;
-  text-align: center;
+}
+@media only screen and (min-width: 42rem) {
+  .hero .text-container p {
+    text-align: left;
+  }
+}
+@media only screen and (min-width: 79.5rem) {
+  .hero .text-container p {
+    padding-right: 200px;
+  }
 }
 .hero .text-container button {
   background-color: transparent;
@@ -133,6 +331,30 @@ body {
   font-size: 1rem;
   letter-spacing: 1.5px;
   cursor: pointer;
+}
+
+* *,
+*::after,
+*::before {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 1rem;
+  color: #D9D9D9;
+  box-sizing: border-box;
+  font-family: "Space Grotesk", sans serif;
+  width: 100%;
+  /* height: 100%; */
+  overflow-x: hidden;
+}
+
+body {
+  background-color: #151515;
+  width: 100%;
+  overflow-x: hidden; /* To avoid overflowing due to style img */
 }
 
 main {
@@ -151,12 +373,6 @@ main .skills-container {
   width: calc(75vw + 10px);
   align-items: center;
   position: relative;
-  /* &::after{
-      content: url(../assets/images/pattern-rings.svg);
-      position: absolute;
-      bottom: -50px;
-      right: -390px;
-  } */
 }
 main .skills-container .skills-rings {
   position: absolute;
@@ -176,12 +392,6 @@ main .skills-container .skills:nth-child(1) {
 }
 main .skills-container .skills:nth-child(6) {
   padding-bottom: 50px;
-}
-
-.solo-rings {
-  position: absolute;
-  bottom: -520px;
-  right: -390px;
 }
 
 .mid-container {
@@ -248,6 +458,30 @@ main .skills-container .skills:nth-child(6) {
   margin-bottom: 25px;
 }
 
+* *,
+*::after,
+*::before {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 1rem;
+  color: #D9D9D9;
+  box-sizing: border-box;
+  font-family: "Space Grotesk", sans serif;
+  width: 100%;
+  /* height: 100%; */
+  overflow-x: hidden;
+}
+
+body {
+  background-color: #151515;
+  width: 100%;
+  overflow-x: hidden; /* To avoid overflowing due to style img */
+}
+
 .contact-container {
   background-color: #242424;
 }
@@ -312,6 +546,30 @@ main .skills-container .skills:nth-child(6) {
   cursor: pointer;
 }
 
+* *,
+*::after,
+*::before {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 1rem;
+  color: #D9D9D9;
+  box-sizing: border-box;
+  font-family: "Space Grotesk", sans serif;
+  width: 100%;
+  /* height: 100%; */
+  overflow-x: hidden;
+}
+
+body {
+  background-color: #151515;
+  width: 100%;
+  overflow-x: hidden; /* To avoid overflowing due to style img */
+}
+
 footer {
   background-color: #242424;
 }
@@ -330,111 +588,6 @@ footer .footer-container div .logo {
 }
 footer .footer-container .social-media a img {
   margin: 20px 10px;
-}
-
-@media screen and (min-width: 37.5rem) {
-  .header {
-    flex-direction: row;
-    justify-content: space-between;
-  }
-  .hero {
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: repeat(4, 1fr);
-    align-items: end;
-    max-height: 750px;
-  }
-  .hero .profile-container {
-    grid-column: 4/7;
-    grid-row: 1/5;
-  }
-  .hero h1 {
-    grid-column: 1/5;
-    grid-row: 3/4;
-    text-align: left;
-    z-index: 2;
-    margin-bottom: 50px;
-  }
-  .hero h1::after {
-    right: 450px;
-    top: 162px;
-  }
-  .hero .text-container {
-    grid-column: 1/4;
-    grid-row: 4/5;
-  }
-  .hero .text-container p {
-    font-size: 1.2rem;
-    text-align: left;
-    padding: 0 0 20px 20px;
-  }
-  .hero .text-container button {
-    margin-left: -150px;
-  }
-}
-@media screen and (min-width: 62.5rem) {
-  .header {
-    margin: 25px 35px 30px 120px;
-  }
-  .hero {
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: repeat(6, 1fr);
-    align-items: end;
-    max-height: 750px;
-  }
-  .hero .profile-container {
-    grid-column: 9/13;
-    grid-row: 1/7;
-  }
-  .hero .profile-container::after {
-    left: -70px;
-    bottom: 20px;
-  }
-  .hero h1 {
-    grid-column: 2/11;
-    grid-row: 3/4;
-    text-align: left;
-    z-index: 2;
-    margin-bottom: 50px;
-    width: 900px;
-  }
-  .hero h1::after {
-    right: calc(54vw + 130px) !important;
-    top: 124px;
-  }
-  .hero .text-container {
-    grid-column: 2/7;
-    grid-row: 4/5;
-  }
-  .hero .text-container p {
-    font-size: 1.2rem;
-    text-align: left;
-    padding: 0 0 20px 20px;
-    margin: 0 66px 0 0;
-  }
-  .hero .text-container button {
-    margin-left: -240px;
-  }
-}
-* *,
-*::after,
-*::before {
-  box-sizing: inherit;
-  margin: 0;
-  padding: 0;
-}
-
-html {
-  font-size: 1rem;
-  color: #D9D9D9;
-  box-sizing: border-box;
-  font-family: "Space Grotesk", sans serif;
-}
-
-body {
-  background-color: #151515;
-  overflow-x: hidden; /* To avoid overflowing due to style img */
 }
 
 /*# sourceMappingURL=style.css.map */
