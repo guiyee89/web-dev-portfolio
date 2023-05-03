@@ -87,15 +87,17 @@ main{
         color: $white;
 
     }
+
     /***** BUTTON *****/
     @include btn-hover;
     button{
         font-size: .9rem;
+        padding: 0.7em 0.2em;
         @media only screen and (min-width: $bp-tabbb){
             font-size: 1.1rem;
+            padding: 0.7em 0.9em;
         }
     }
-
 }
 //    =====================     //
 //          Projects            //

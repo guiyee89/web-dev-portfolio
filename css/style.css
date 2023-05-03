@@ -743,10 +743,12 @@ main .skills-container .skills h2 {
 }
 .mid-container button {
   font-size: 0.9rem;
+  padding: 0.7em 0.2em;
 }
 @media only screen and (min-width: 50.5rem) {
   .mid-container button {
     font-size: 1.1rem;
+    padding: 0.7em 0.9em;
   }
 }
 
@@ -991,16 +993,24 @@ body {
 .contact-footer-wrapper .contact-container .contact-title-text {
   margin: 10px;
   text-align: center;
+  padding: 7px 28px 0 10px;
+  min-width: 200px;
+  max-width: 500px;
 }
 @media only screen and (min-width: 32rem) {
   .contact-footer-wrapper .contact-container .contact-title-text {
-    width: 50%;
+    width: 60vw;
   }
 }
 @media only screen and (min-width: 79.5rem) {
   .contact-footer-wrapper .contact-container .contact-title-text {
     width: 470px;
     text-align: left;
+  }
+}
+@media only screen and (min-width: 52rem) {
+  .contact-footer-wrapper .contact-container .contact-title-text {
+    width: 50vw;
   }
 }
 @media only screen and (min-width: 86rem) {
@@ -1027,13 +1037,14 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-bottom: 50px;
+  padding: 15px 25px 50px 10px;
   position: relative;
+  margin: 0 auto;
   /* ==== Button ==== */
 }
 @media only screen and (min-width: 32rem) {
   .contact-footer-wrapper .contact-container .form .contact-form {
-    width: 45vw;
+    width: 65%;
   }
 }
 @media only screen and (min-width: 79.5rem) {
@@ -1258,7 +1269,7 @@ footer .footer-container {
   border-top: 2px solid #D9D9D9;
   width: 85%;
   margin: 0 auto;
-  padding-bottom: 35px;
+  padding: 10px 0 25px 0;
   max-width: 1300px;
 }
 @media only screen and (min-width: 42rem) {

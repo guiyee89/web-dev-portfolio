@@ -25,13 +25,19 @@
         .contact-title-text{
             margin: 10px;
             text-align: center;
+            padding: 7px 28px 0 10px;
+            min-width: 200px;
+            max-width: 500px;
 
             @media only screen and (min-width:$bp-first) {
-                width: 50%;
+                width: 60vw;
             }
             @media only screen and (min-width: $bp-mb-pro){
                 width: 470px;
                 text-align: left;
+            }
+            @media only screen and (min-width: $bp-tabbb-prop){
+                width: 50vw;
             }
             @media only screen and (min-width: 86rem){
                 margin-left: -5px;
@@ -57,12 +63,14 @@
                 display: flex;
                 flex-direction: column;
                 align-items: center;
-                padding-bottom: 50px;
+                padding: 15px 25px 50px 10px;
                 position: relative;
+                margin: 0 auto;
 
                 @media only screen and (min-width:$bp-first){
-                    width: 45vw;
+                    width: 65%;
                 }
+                
                 @media only screen and (min-width: $bp-mb-pro)  {
                     width: 470px;
                     text-align: left;
