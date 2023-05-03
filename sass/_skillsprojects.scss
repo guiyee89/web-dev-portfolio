@@ -1,5 +1,5 @@
 @import "./base";
-
+@import "./variables";
 //    =====================     //
 //             Main             //
 //    =====================     //
@@ -9,38 +9,52 @@ main{
     align-items: center;
     margin: 20px;
     margin-top: -35px;
-    
-    
+    max-width: 75rem;
+    margin: 0 auto;
+
     .skills-container{
-        display: flex;
-        flex-direction: column;
+        display: grid;
+        grid-template-columns: 1fr;
         justify-items: center;
         border-top: 2px solid $light-gray;
         border-bottom: 2px solid $light-gray;
-        width: calc(75vw + 10px);
+        width: calc(83vw + 10px);
         align-items: center;
         position: relative;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        max-width: 77rem;
+        margin: 0 auto;
+
+        @media only screen and (min-width:$bp-tab){
+            grid-template-columns: 1fr 1fr;
+            justify-items: baseline;
+        }
 
         .skills-rings{
             position: absolute;
             bottom: -30px;
             right: -320px;
             overflow: hidden;
-        }
 
+            @media only screen and (min-width:$bp-tab){
+                bottom: -30px;
+                right: -396px;
+            }
+        }
         .skills{
-            padding: 15px;
+            padding: 20px 0 20px 0;
 
             h2{
                 text-align: center;
                 color: $white;
+                font-size: 1.7rem;
+
+                @media only screen and (min-width:$bp-tab){
+                    text-align: left;
+                    font-size: 2rem;
+                }
             }
-        }
-        .skills:nth-child(1){
-            padding-top: 50px;
-        }
-        .skills:nth-child(6){
-            padding-bottom: 50px;
         }
     }
     
@@ -84,6 +98,11 @@ main{
     grid-template-columns: 1fr;
     margin: -5px;
     
+    @media only screen and (min-width:$bp-tab){
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+    }
+
     .project-img picture img {
         max-width: 100%;
       }
@@ -105,13 +124,14 @@ main{
     .project-button {
         margin-bottom: 20px;
         margin-left: 6px;
+
         button{
             background-color: transparent;
             border: none;
             color: $white;
             border-bottom: 2px solid $green;
             padding-bottom: 10px;
-            margin-top: 20px;
+            margin-top: 30px;
             margin-right: 25px;
             font-weight: 600;
             font-size: .8rem;

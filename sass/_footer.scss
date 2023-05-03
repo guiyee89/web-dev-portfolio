@@ -1,22 +1,43 @@
 @import "./base";
-
+@import "./variables";
 //    =====================     //
 //            Footer            //
 //    =====================     //
 footer{
     background-color: $gray;
+
     .footer-container{
         display: flex;
         flex-direction: column;
         align-items: center;
-        z-index: 1;
         position: relative;
+        border-top: 2px solid $light-gray;
+        width: 85%;
+        margin: 0 auto;
+
+        @media only screen and (min-width:$bp-tab){
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
         div{
             .logo{
                 color: $white;
                 position: relative;
                 text-decoration: none;
                 font-size: 1.4rem;
+                position: relative;
+            }
+            .ring{
+                position: absolute;
+                right: 180px;
+                top: -162px;
+                @media only screen and (min-width:$bp-first){
+                    right:340px
+                }
+                @media only screen and (min-width:$bp-tab){
+                    right:385px
+                }
             }
         }
         .social-media a img{

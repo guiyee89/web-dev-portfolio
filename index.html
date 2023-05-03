@@ -9,25 +9,16 @@
   <title>Adam Keyes | Dev Portfolio</title>
 </head>
 <body>
-  <!--   =====================     -->
-  <!--           Header            -->
-  <!--   =====================     -->
-  <!-- <header class="header">
-    <div>
-      <a href="#" aria-label="Adam keyes home" class="logo">adamkeyes</a>
-    </div>
-    <div class="social-media">
-      <a href="https://www.frontendmentor.io/profile/guiyee89" aria-label="Front-end Mentor" target="_blank"><img src="./assets/images/icon-frontend-mentor.svg" alt=""></a>
-      <a href="https://github.com/guiyee89" target="_blank"><img src="./assets/images/icon-github.svg" alt=""></a>
-      <a href="https://www.linkedin.com/in/guillermo-di-nanno-b08852250/" target="_blank"><img src="./assets/images/icon-linkedin.svg" alt=""></a>
-      <a href="https://twitter.com/GMD1089" target="_blank"><img src="./assets/images/icon-twitter.svg" alt=""></a>
-    </div>
-    
-  </header> -->
+  <div class="body-wrapper">
   <!--   =====================     -->
   <!--            Hero             -->
   <!--   =====================     -->
   <section class="hero">
+
+     <!--   =====================     -->
+    <!--           Header            -->
+    <!--   =====================     -->
+ 
     <header class="header">
       <div>
         <a href="#" aria-label="Adam keyes home" class="logo">adamkeyes</a>
@@ -55,7 +46,7 @@
       <img class="profile-rings" src="./assets/images/pattern-rings.svg"alt="">
     </div>
     <div class="text-container">
-      <p>Based in the UK, i'm a front-enddeveloper passionate about buildingaccessible web apps that users love.<p>
+      <p>Based in the UK, i'm a front-end developer passionate about building accessible web apps that users love.<p>
       <button><span>CONTACT ME</span><button>
     </div>
     
@@ -239,7 +230,7 @@
     
     </section>
   </main>
-
+  </div>
   <!--   =====================     -->
   <!--          Contact            -->
   <!--   =====================     -->
@@ -253,10 +244,12 @@
       <small></small>
       <input type="text" name="email" id="email" placeholder="EMAIL" autocomplete="email" required>
       <textarea name="message" id="message" rows="4" cols="50" placeholder="MESSAGE" required></textarea>
-      <button>SEND MESSAGE</button>
-      <img class="ring" src="./assets/images/pattern-rings.svg" alt="">
-      
-    </div>
+      <div
+      class="button">
+        <button>SEND MESSAGE</button>
+      </div>
+ 
+    
   </section>
 
   <!--   =====================     -->
@@ -266,6 +259,7 @@
     <div class="footer-container">
       <div>
         <a href="#" aria-label="Adam keyes home" class="logo">adamkeyes</a>
+        <img class="ring" src="./assets/images/pattern-rings.svg" alt="">
       </div>
       <div class="social-media">
         <a href="https://www.frontendmentor.io/profile/guiyee89" aria-label="Front-end Mentor" target="_blank"><img src="./assets/images/icon-frontend-mentor.svg" alt=""></a>
@@ -275,7 +269,7 @@
       </div>
     </div>
   </footer>
-
+</div>
   <script src="./js/main.js"></script>
 </body>
 </html>
