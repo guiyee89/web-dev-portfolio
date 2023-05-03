@@ -975,7 +975,8 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  max-width: 1300px;
+  width: 100vw;
+  max-width: 1500px;
   margin: 0 auto;
   /* ==== Title ==== */
   /* ===== Form ===== */
@@ -984,7 +985,7 @@ body {
   .contact-footer-wrapper .contact-container {
     flex-direction: row;
     align-items: normal;
-    justify-content: space-between;
+    justify-content: space-around;
   }
 }
 .contact-footer-wrapper .contact-container .contact-title-text {
@@ -1000,6 +1001,11 @@ body {
   .contact-footer-wrapper .contact-container .contact-title-text {
     width: 470px;
     text-align: left;
+  }
+}
+@media only screen and (min-width: 86rem) {
+  .contact-footer-wrapper .contact-container .contact-title-text {
+    margin-left: -5px;
   }
 }
 .contact-footer-wrapper .contact-container .contact-title-text h2 {
