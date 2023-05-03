@@ -9,6 +9,8 @@
     z-index: 1;
     margin-bottom: 50px;
     margin: 0 auto;
+    width: 99vw;
+    max-width: 1545px;
     /* @media only screen and (min-width: $bp-first){
         grid-template-columns: 1fr;
     } */
@@ -18,7 +20,9 @@
         grid-template-rows: repeat(6,1fr);
         max-height: 800px;
     }
-
+    @media only screen and (min-width: 115rem){
+       
+    }
     //    =====================     //
     //            Header            //
     //    =====================     //
@@ -140,15 +144,15 @@
         @media only screen and (min-width:82rem){
             margin-left: 60px;
         }
-        @media only screen and (min-width:$bp-bigger-laptop){
-            margin-left: 130px;
+        @media only screen and (min-width:87rem){
+            margin-left: 125px;
         }
         @media only screen and (min-width:$bp-higher-res){
             margin-left: 180px;
         }
         @media only screen and (min-width:$bp-full-hd){
             margin-left: 220px;
-            padding-right: 150px;
+            padding-right: 57px;
         }
         h1{
             font-size:clamp(2rem, 5vw + 0.68rem, 5.5rem);
@@ -162,7 +166,7 @@
                 padding: 25px 25px 25px 15px
             }  
             @media only screen and (min-width: 100rem){
-                font-size: clamp(2rem, 3.3vw + 0.78rem, 5.5rem)
+                font-size: 5rem;
             }
             
         }
@@ -218,8 +222,8 @@
         @media only screen and (min-width:75rem){
             margin-left: 60px;
         } 
-        @media only screen and (min-width:82rem){
-            margin-left: 60px;
+        @media only screen and (min-width:87rem){
+            margin-left: 125px;
         }
         @media only screen and (min-width:$bp-bigger-laptop){
             margin-left: 140px;
@@ -231,13 +235,14 @@
             margin-left: 220px;
         }
         p{
-            padding: 15px;
-            @media only screen and (min-width: $bp-tab){
-                text-align: left;
-            }
-            @media only screen and (min-width:$bp-mb-pro){
-                padding-right: 200px;
-            }
+        padding: 15px 25px 15px 15px;
+
+        @media only screen and (min-width: $bp-tab){
+            text-align: left;
+        }
+        @media only screen and (min-width:$bp-mb-pro){
+            padding-right: 200px;
+        }
 
         }
         button{
@@ -248,7 +253,7 @@
             padding-bottom: 10px;
             margin-top: 20px;
             font-weight: bold;
-            font-size: 1rem;
+            font-size: 1.2rem;
             letter-spacing: 1.5px;
             cursor: pointer;
         }

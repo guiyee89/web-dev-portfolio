@@ -1,0 +1,432 @@
+// @import "./variables";
+// //    =====================     //
+// //            Header            //
+// //    =====================     //
+// .header{
+//     display: flex;
+//     flex-direction: column;
+//     align-items: center;
+//     margin: 20px;
+//     z-index: 2;
+//     position: relative;
+
+//     div .logo{
+//         color: $white;
+//         margin: 10px 10px;
+//         position: relative;
+//         text-decoration: none;
+//          font-size: 1.4rem;
+//     }
+//     .social-media a img{
+//         margin: 20px 10px;
+//     }
+// }
+// //    =====================     //
+// //             Hero             //
+// //    =====================     //
+// .hero{
+//     top: -120px;
+//     position: relative;
+//     z-index: 1;
+//     .profile-container{
+//         display: grid;
+//         grid-template-columns: 1fr;
+//         justify-items: center;
+//         position: relative;
+        
+//         /* Make overflowing img to be absolute to it's relative containing block */
+//         /* &::after{
+//             content: url(../assets/images/pattern-circle.svg);
+//             position: absolute;
+//             bottom: -25px;
+//             right: -60px;
+//         } */
+//         .profile-circle{
+//             position: absolute;
+//             bottom: 60px;
+//             right: 400px;
+//             overflow: hidden;
+//             @media only screen and (min-width: 75rem){
+//                 position: absolute;
+//                 bottom: 60px;
+//                 right: 259px;
+//                 overflow: hidden;
+//             }
+//             @media only screen and (min-width: 81rem){
+//                 position: absolute;
+//                 bottom: 40px;
+//                 right: 339px;
+//                 overflow: hidden;
+//             }
+//             @media only screen and (min-width: 93rem){
+//                 position: absolute;
+//                 bottom: 50px;
+//                 right: 399px;
+//                 overflow: hidden;
+//             }
+//         }
+//     }
+//     .profile-rings{
+//         position: absolute;
+//         top: 140px;
+//         left: -160px;
+//     }
+//     picture{
+//         img{
+//             width: clamp(200px,50vw,450px);
+//         }
+//     }
+
+//     /* TITLE - TEXT - BTN */
+        
+//     h1{
+//         margin-top: 30px;
+//         font-size:clamp(2.2rem, 5vw + 1.6rem, 5.5rem);
+//         color: $white;
+//         text-align: center;
+//         padding: 25px;
+//         span{
+//             border-bottom: 4px solid$green;
+//         }
+        
+//     }
+//     .text-container{
+//         display: flex;
+//         flex-direction: column;
+//         align-items: center;
+//         p{
+//             padding: 15px;
+//             text-align: center;
+//         }
+//         button{
+//             background-color: transparent;
+//             border: none;
+//             color: $white;
+//             border-bottom: 2px solid$green;
+//             padding-bottom: 10px;
+//             margin-top: 20px;
+//             font-weight: bold;
+//             font-size: 1rem;
+//             letter-spacing: 1.5px;
+//             cursor: pointer;
+//         }
+//     }
+// }
+
+// //    =====================     //
+// //             Main             //
+// //    =====================     //
+// main{
+//     display: flex;
+//     flex-direction: column;
+//     align-items: center;
+//     margin: 20px;
+//     margin-top: -35px;
+    
+    
+//     .skills-container{
+//         display: flex;
+//         flex-direction: column;
+//         justify-items: center;
+//         border-top: 2px solid $light-gray;
+//         border-bottom: 2px solid $light-gray;
+//         width: calc(75vw + 10px);
+//         align-items: center;
+//         position: relative;
+
+//         .skills-rings{
+//             position: absolute;
+//             bottom: -30px;
+//             right: -320px;
+//             overflow: hidden;
+//         }
+
+//         .skills{
+//             padding: 15px;
+
+//             h2{
+//                 text-align: center;
+//                 color: $white;
+//             }
+//         }
+//         .skills:nth-child(1){
+//             padding-top: 50px;
+//         }
+//         .skills:nth-child(6){
+//             padding-bottom: 50px;
+//         }
+//     }
+    
+// }
+
+// //    =====================     //
+// //         Mid Section          //
+// //         Title + Btn          //
+// //    =====================     //
+// .mid-container{
+//     margin: 50px;
+//     display: flex;
+//     align-items: center;
+//     justify-content: space-between;
+//     width: 85vw;
+    
+
+//     h2{
+//         font-size: clamp(2.2rem, 5vw + 1.5rem, 6rem);
+//         color: $light-gray;
+
+//     }
+//     button{
+//         background-color: transparent;
+//         border: none;
+//         color: $light-gray;
+//         border-bottom: 2px solid $green;
+//         padding-bottom: 10px;
+//         margin-top: 20px;
+//         font-weight: bold;
+//         font-size: .8rem;
+//         letter-spacing: 1.5px;
+//         cursor: pointer;
+//     }
+// }
+// //    =====================     //
+// //          Projects            //
+// //    =====================     //
+// .projects-container{
+//     display: grid;
+//     grid-template-columns: 1fr;
+//     margin: -5px;
+    
+//     .project-img picture img {
+//         max-width: 100%;
+//       }
+//     .project-text{
+//         margin-left: 6px;
+//         h3{
+//             padding: 7px 0;
+//             color: $white;
+//             font-size: clamp(1.2rem , 2.5vw + .15rem, 1.8rem);
+//         }
+//         h4{
+//             span{
+//                 padding: 7px 0;
+//                 margin-right: 10px;
+//                 color: $light-gray;
+//             }
+//         }
+//     }
+//     .project-button {
+//         margin-bottom: 20px;
+//         margin-left: 6px;
+//         button{
+//             background-color: transparent;
+//             border: none;
+//             color: $white;
+//             border-bottom: 2px solid $green;
+//             padding-bottom: 10px;
+//             margin-top: 20px;
+//             margin-right: 25px;
+//             font-weight: 600;
+//             font-size: .8rem;
+//             letter-spacing: 1.5px;
+//             cursor: pointer;    
+//             margin-bottom: 25px;
+//         }
+//     }
+// }
+// //    =====================     //
+// //           Contact            //
+// //    =====================     //
+// .contact-container{
+//     background-color: $gray;
+
+//     .contact-title-text{
+//         margin: 10px;
+//         text-align: center;
+
+//         h2{
+//             font-size: clamp(1.8rem , 5vw + .15rem, 2.5rem);
+//             padding: 45px 0 15px 0;
+//         }
+//     }
+
+//     .contact-form{
+//         display: flex;
+//         flex-direction: column;
+//         align-items: flex-end;
+//         padding-bottom: 50px;
+//         margin-right: calc(9vw + 10px);
+//         margin-left: calc(5vw + 10px);
+
+//         input{
+//             background-color: transparent;
+//             border: none;
+//             border-bottom: 1px solid $light-gray;
+//             width: 80vw;
+//             padding: 1.7rem 1.4rem .7rem 1.4rem;
+//             font-weight: bold;
+//             font-size: 1rem;
+//             text-transform: uppercase;
+//             color: $white;
+//         }
+//         textarea{
+//             background-color: transparent;
+//             border: none;
+//             border-bottom: 1px solid $light-gray;
+//             resize: none;
+//             width: 80vw;
+//             padding: 1.7rem 1.4rem .7rem 1.4rem;
+//             font-weight: bold;
+//             font-size: 1.2rem;
+//             text-transform: uppercase;
+//             color: $white;
+//             font-family: inherit;
+//         }
+//         input:focus, textarea:focus {
+//             outline: none;
+//           }
+//         .ring{
+//             position: absolute;
+//             right: 67vw;
+//             margin-top: 200px
+//         }
+//         button{
+//             background-color: transparent;
+//             border: none;
+//             color: $white;
+//             border-bottom: 2px solid $green;
+//             padding-bottom: 10px;
+//             margin-top: 40px;
+//             font-weight: bold;
+//             font-size: 1rem;
+//             letter-spacing: 1.5px;
+//             cursor: pointer;       
+//         }
+//     }
+// }
+// //    =====================     //
+// //            Footer            //
+// //    =====================     //
+// footer{
+//     background-color: $gray;
+//     .footer-container{
+//         display: flex;
+//         flex-direction: column;
+//         align-items: center;
+//         z-index: 1;
+//         position: relative;
+//         div{
+//             .logo{
+//                 color: $white;
+//                 position: relative;
+//                 text-decoration: none;
+//                 font-size: 1.4rem;
+//             }
+//         }
+//         .social-media a img{
+//             margin: 20px 10px;
+//         }
+//     }
+// }
+
+// //   =====================    //
+// //       MEDIA QUERIES        //
+// //   =====================    //
+// //          Tablet            //
+// //   =====================    //
+
+// @media screen and (min-width: 37.5rem){
+// //   ======  Header  =======  //
+//     .header{
+//         flex-direction: row;
+//         justify-content: space-between;
+//     }
+// //   ======   Hero   ======  //
+//     .hero{
+//         display: grid;
+//         grid-template-columns: repeat(6, 1fr);
+//         grid-template-rows: repeat(4, 1fr);
+//         align-items: end;
+//         max-height: 750px;
+//         .profile-container{
+//             grid-column: 4/7;
+//             grid-row: 1/5;
+//         }
+//         h1{
+//             grid-column: 1/5;
+//             grid-row: 3/4;
+//             text-align: left;
+//             z-index: 2;
+//             margin-bottom: 50px;
+//         }
+//         h1::after{
+//             right: 450px;
+//             top: 162px;
+//         }
+//         .text-container{
+//             grid-column: 1/4;
+//             grid-row: 4/5;
+            
+//             p{
+//                 font-size: 1.2rem;
+//                 text-align: left;
+//                 padding: 0 0 20px 20px;
+//             }
+//             button{
+//                 margin-left: -150px;
+//             }
+//         }
+//     }
+// }
+
+// //   =====================    //
+// //          Desktop           //
+// //   =====================    //
+
+// @media screen and (min-width: 62.5rem){
+//     .header{
+//         margin: 25px 35px 30px 120px
+//     }
+//     .hero{
+//         display: grid;
+//         grid-template-columns: repeat(12, 1fr);
+//         grid-template-rows: repeat(6, 1fr);
+//         align-items: end;
+//         max-height: 750px;
+
+//         .profile-container{
+//             grid-column: 9/13;
+//             grid-row: 1/7;
+//         }
+//         .profile-container::after{
+//             left: -70px;
+//             bottom: 20px;
+//         }
+//         h1{
+//             grid-column: 2/11;
+//             grid-row: 3/4;
+//             text-align: left;
+//             z-index: 2;
+//             margin-bottom: 50px;
+//             width: 900px;
+//         }
+//         h1::after{
+//             right: calc(54vw + 130px)!important;
+//             top: 124px
+//         }
+//         .text-container{
+//             grid-column: 2/7;
+//             grid-row: 4/5;
+            
+//             p{
+//                 font-size: 1.2rem;
+//                 text-align: left;
+//                 padding: 0 0 20px 20px;
+//                 margin: 0 66px 0 0;
+//             }
+//             button{
+//                 margin-left: -240px
+//             }
+//         }
+//     }
+// } 

@@ -7,9 +7,8 @@ main{
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 20px;
     margin-top: -35px;
-    max-width: 75rem;
+    max-width: 84vw;
     margin: 0 auto;
 
     .skills-container{
@@ -23,12 +22,16 @@ main{
         position: relative;
         padding-top: 50px;
         padding-bottom: 50px;
-        max-width: 77rem;
+        max-width: 75rem;
         margin: 0 auto;
 
         @media only screen and (min-width:$bp-tab){
             grid-template-columns: 1fr 1fr;
             justify-items: baseline;
+        }
+        @media only screen and (min-width:$bp-mb-pro){
+            border-bottom: none;  
+            grid-template-columns: 1fr 1fr 1fr;
         }
 
         .skills-rings{
@@ -40,6 +43,10 @@ main{
             @media only screen and (min-width:$bp-tab){
                 bottom: -30px;
                 right: -396px;
+            }
+            
+            @media only screen and (min-width: $bp-bigger-laptop){
+                right: -300px;
             }
         }
         .skills{
@@ -53,6 +60,9 @@ main{
                 @media only screen and (min-width:$bp-tab){
                     text-align: left;
                     font-size: 2rem;
+                }
+                @media only screen and (min-width: $bp-bigger-laptop){
+                    font-size: 2.5rem;
                 }
             }
         }
@@ -69,12 +79,12 @@ main{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 85vw;
-    
+    max-width: 1215px;
+    width: 84vw;
 
     h2{
         font-size: clamp(2.2rem, 5vw + 1.5rem, 6rem);
-        color: $light-gray;
+        color: $white;
 
     }
     button{
@@ -88,6 +98,9 @@ main{
         font-size: .8rem;
         letter-spacing: 1.5px;
         cursor: pointer;
+        @media only screen and (min-width: $bp-bigger-laptop){
+            font-size: 1.1rem;
+        }
     }
 }
 //    =====================     //
@@ -97,14 +110,68 @@ main{
     display: grid;
     grid-template-columns: 1fr;
     margin: -5px;
-    
+    width: 84vw;
+    max-width: 1250px;
+
     @media only screen and (min-width:$bp-tab){
         grid-template-columns: 1fr 1fr;
-        gap: 1rem;
+        gap: 2rem;
     }
-
+    @media only screen and (min-width: $bp-mb-pro) {
+        margin-bottom: 100px;
+    }
     .project-img picture img {
         max-width: 100%;
+    }
+
+    /* .project-img{
+        cursor: pointer;
+
+        @media only screen and (min-width: $bp-mb-pro) {
+            display: flex;
+            position: relative;
+            z-index: 0;
+            align-items: center;
+            justify-content: center;
+        
+            picture img{
+                max-width: 100%;
+            }
+        }
+    } */
+    .project-img {
+        cursor: pointer;
+    
+        @media only screen and (min-width: $bp-mb-pro) {
+          display: flex;
+          position: relative;
+          z-index: 0;
+          align-items: center;
+          justify-content: center;
+    
+          &::before {
+            content: '';
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            background-color: hsla(0, 0%, 0%, 0.5);
+            transition: opacity 0.3s ease-in-out;
+          }
+    
+          &:hover::before {
+            opacity: 1;
+          }
+    
+          picture img {
+            &:hover {
+              background-color: hsla(0, 0%, 0%, 0.75) !important;
+            }
+          }
+        }
       }
     .project-text{
         margin-left: 6px;
@@ -121,9 +188,16 @@ main{
             }
         }
     }
+    
     .project-button {
         margin-bottom: 20px;
         margin-left: 6px;
+        @media only screen and (min-width: $bp-mb-pro) {
+            display: flex;
+            position: absolute;
+            z-index: 1;
+            flex-direction: column;
+        }
 
         button{
             background-color: transparent;
@@ -138,6 +212,10 @@ main{
             letter-spacing: 1.5px;
             cursor: pointer;    
             margin-bottom: 25px;
+            @media only screen and (min-width: $bp-mb-pro) {
+                /* display: none; */
+                color: $black;
+            }
         }
     }
 }

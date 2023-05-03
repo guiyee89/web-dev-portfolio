@@ -1,0 +1,42 @@
+
+// ====================== //
+//         COLORS         //
+// ====================== //
+
+$black: #151515;
+$gray: #242424;
+$light-gray: #D9D9D9;
+$white: #FFFFFF;
+$green: #4EE1A0; 
+
+// ====================== //
+//       FONT-WEIGHT      //
+// ====================== //
+
+$fw-b: 700;
+$fw-m: 500;
+
+// ====================== //
+//       RESPONSIVE       //
+//       Breakpoints      //
+// ====================== //
+$bp-first: 32rem; //600px first breakpoint
+$bp-tab: 42rem; // 672px small tablets
+$bp-tabb: 48.5rem; // 776px slightly bigger ipads
+$bp-tabbb: 50.5rem; // 808px slightly bigger ipads
+$bp-tabbb-pro: 51rem; // 816px slightly bigger ipads
+$bp-tabbb-prop: 52rem; // 832px newew iPad Pro
+$bp-spro: 57rem; // 912px newew iPad Pro
+$bp-ipad-pro: 62.5rem; // 1024px big iPads
+$bp-mb-pro: 79.5rem; // 1272px MacBook Pro 13
+$bp-bigger-laptop: 88.5rem; // 1432px MacBook Pro 13
+$bp-higher-res: 100rem; // 1672px MacBook Pro 13
+$bp-full-hd: 119rem; // 1920px FUll HD
+$bp-4k: 160rem; // 2560px 4k
+
+// ====================== //
+//        UTILITIES       //
+// ====================== //
+.hidden{
+    display: none;
+}

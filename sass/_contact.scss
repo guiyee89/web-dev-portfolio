@@ -10,6 +10,12 @@
     flex-direction: column;
     align-items: center;
 
+    @media only screen and (min-width: $bp-mb-pro){
+        flex-direction: row;
+        align-items: normal;
+        justify-content: space-around;
+    }
+
     .contact-title-text{
         margin: 10px;
         text-align: center;
@@ -17,7 +23,10 @@
         @media only screen and (min-width:$bp-first) {
             width: 50%;
         }
-
+        @media only screen and (min-width: $bp-mb-pro){
+            width: 470px;
+            text-align: left;
+        }
         h2{
             font-size: clamp(1.8rem , 5vw + .15rem, 2.5rem);
             padding: 45px 0 15px 0;
@@ -25,6 +34,9 @@
 
             @media only screen and (min-width:$bp-first){
                 font-size: 3rem;
+            }
+            @media only screen and (min-width: $bp-mb-pro){
+                font-size: 3.5rem;
             }
         }
     }
@@ -38,6 +50,11 @@
 
         @media only screen and (min-width:$bp-first){
            width: 50%;
+        }
+        @media only screen and (min-width: $bp-mb-pro){
+            width: 470px;
+            text-align: left;
+            padding-top: 30px;
         }
 
         input{
