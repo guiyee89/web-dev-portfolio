@@ -39,15 +39,22 @@
             margin: 10px 10px;
             text-decoration: none;
             font-size: 1.4rem;
+            @media only screen and (min-width: $bp-ipad-pro){
+                font-size: clamp(1.4rem, 2vw + .2rem, 2.2rem);
+            }
         }
         .social-media{
             display: flex;
         }
-        .social-media a img{
+        .social-media a svg{
             display: flex;
-            margin: 20px 10px;
+            margin: 10px 8px;
+            padding-left: 10px;
         }
-        
+        #Oval-1:hover {
+            fill: $green; transition: ease-in-out 0.1s all;
+        }
+         
         @media only screen and (min-width: $bp-tab){
             justify-content: space-around;
             flex-direction: row;

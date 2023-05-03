@@ -3,10 +3,28 @@
 @import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&display=swap");
+/* Hidden */
 .hidden {
   display: none;
 }
 
+/* Button visited */
+.btn, .btn:link, .btn:visited {
+  display: inline-block;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1.6rem;
+  font-weight: 700;
+  letter-spacing: 0.229rem;
+  line-height: 2.6rem;
+  padding-bottom: 1rem;
+  /* only for the .btn itself */
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+/* Button hover */
 * *,
 *::after,
 *::before {
@@ -35,10 +53,28 @@ body {
   margin: 0 auto;
 }
 
+/* Hidden */
 .hidden {
   display: none;
 }
 
+/* Button visited */
+.btn, .btn:link, .btn:visited {
+  display: inline-block;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1.6rem;
+  font-weight: 700;
+  letter-spacing: 0.229rem;
+  line-height: 2.6rem;
+  padding-bottom: 1rem;
+  /* only for the .btn itself */
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+/* Button hover */
 * *,
 *::after,
 *::before {
@@ -67,10 +103,28 @@ body {
   margin: 0 auto;
 }
 
+/* Hidden */
 .hidden {
   display: none;
 }
 
+/* Button visited */
+.btn, .btn:link, .btn:visited {
+  display: inline-block;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1.6rem;
+  font-weight: 700;
+  letter-spacing: 0.229rem;
+  line-height: 2.6rem;
+  padding-bottom: 1rem;
+  /* only for the .btn itself */
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+/* Button hover */
 .hero {
   display: grid;
   position: relative;
@@ -105,12 +159,22 @@ body {
   text-decoration: none;
   font-size: 1.4rem;
 }
+@media only screen and (min-width: 62.5rem) {
+  .hero .header div .logo {
+    font-size: clamp(1.4rem, 2vw + 0.2rem, 2.2rem);
+  }
+}
 .hero .header .social-media {
   display: flex;
 }
-.hero .header .social-media a img {
+.hero .header .social-media a svg {
   display: flex;
-  margin: 20px 10px;
+  margin: 10px 8px;
+  padding-left: 10px;
+}
+.hero .header #Oval-1:hover {
+  fill: #4EE1A0;
+  transition: ease-in-out 0.1s all;
 }
 @media only screen and (min-width: 42rem) {
   .hero .header {
@@ -439,10 +503,28 @@ body {
   transition-delay: none;
 }
 
+/* Hidden */
 .hidden {
   display: none;
 }
 
+/* Button visited */
+.btn, .btn:link, .btn:visited {
+  display: inline-block;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1.6rem;
+  font-weight: 700;
+  letter-spacing: 0.229rem;
+  line-height: 2.6rem;
+  padding-bottom: 1rem;
+  /* only for the .btn itself */
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+/* Button hover */
 * *,
 *::after,
 *::before {
@@ -471,10 +553,28 @@ body {
   margin: 0 auto;
 }
 
+/* Hidden */
 .hidden {
   display: none;
 }
 
+/* Button visited */
+.btn, .btn:link, .btn:visited {
+  display: inline-block;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1.6rem;
+  font-weight: 700;
+  letter-spacing: 0.229rem;
+  line-height: 2.6rem;
+  padding-bottom: 1rem;
+  /* only for the .btn itself */
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+/* Button hover */
 main {
   display: flex;
   flex-direction: column;
@@ -747,6 +847,10 @@ main .skills-container .skills h2 {
   cursor: pointer;
   margin-bottom: 25px;
 }
+.projects-container .project-button button:hover {
+  color: #4EE1A0;
+  transition: 0.3s ease-in-out;
+}
 @media only screen and (min-width: 79.5rem) {
   .projects-container .project-button button {
     display: none;
@@ -780,6 +884,10 @@ main .skills-container .skills h2 {
   cursor: pointer;
   margin-bottom: 25px;
 }
+.projects-container .desktop-button button:hover {
+  color: #4EE1A0;
+  transition: 0.3s ease-in-out;
+}
 @media only screen and (max-width: 79.5rem) {
   .projects-container .desktop-button button {
     display: none;
@@ -787,10 +895,28 @@ main .skills-container .skills h2 {
   }
 }
 
+/* Hidden */
 .hidden {
   display: none;
 }
 
+/* Button visited */
+.btn, .btn:link, .btn:visited {
+  display: inline-block;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1.6rem;
+  font-weight: 700;
+  letter-spacing: 0.229rem;
+  line-height: 2.6rem;
+  padding-bottom: 1rem;
+  /* only for the .btn itself */
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+/* Button hover */
 * *,
 *::after,
 *::before {
@@ -819,56 +945,79 @@ body {
   margin: 0 auto;
 }
 
+/* Hidden */
 .hidden {
   display: none;
 }
 
-.contact-container {
+/* Button visited */
+.btn, .btn:link, .btn:visited {
+  display: inline-block;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1.6rem;
+  font-weight: 700;
+  letter-spacing: 0.229rem;
+  line-height: 2.6rem;
+  padding-bottom: 1rem;
+  /* only for the .btn itself */
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+/* Button hover */
+.contact-footer-wrapper {
+  background-color: #242424;
+}
+.contact-footer-wrapper .contact-container {
   background-color: #242424;
   display: flex;
   flex-direction: column;
   align-items: center;
+  max-width: 1300px;
+  margin: 0 auto;
   /* ==== Title ==== */
   /* ===== Form ===== */
 }
 @media only screen and (min-width: 79.5rem) {
-  .contact-container {
+  .contact-footer-wrapper .contact-container {
     flex-direction: row;
     align-items: normal;
-    justify-content: space-around;
+    justify-content: space-between;
   }
 }
-.contact-container .contact-title-text {
+.contact-footer-wrapper .contact-container .contact-title-text {
   margin: 10px;
   text-align: center;
 }
 @media only screen and (min-width: 32rem) {
-  .contact-container .contact-title-text {
+  .contact-footer-wrapper .contact-container .contact-title-text {
     width: 50%;
   }
 }
 @media only screen and (min-width: 79.5rem) {
-  .contact-container .contact-title-text {
+  .contact-footer-wrapper .contact-container .contact-title-text {
     width: 470px;
     text-align: left;
   }
 }
-.contact-container .contact-title-text h2 {
+.contact-footer-wrapper .contact-container .contact-title-text h2 {
   font-size: clamp(1.8rem, 5vw + 0.15rem, 2.5rem);
   padding: 45px 0 15px 0;
   color: #FFFFFF;
 }
 @media only screen and (min-width: 32rem) {
-  .contact-container .contact-title-text h2 {
+  .contact-footer-wrapper .contact-container .contact-title-text h2 {
     font-size: 3rem;
   }
 }
 @media only screen and (min-width: 79.5rem) {
-  .contact-container .contact-title-text h2 {
+  .contact-footer-wrapper .contact-container .contact-title-text h2 {
     font-size: 3.5rem;
   }
 }
-.contact-container .contact-form {
+.contact-footer-wrapper .contact-container .form .contact-form {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -877,18 +1026,18 @@ body {
   /* ==== Button ==== */
 }
 @media only screen and (min-width: 32rem) {
-  .contact-container .contact-form {
-    width: 50%;
+  .contact-footer-wrapper .contact-container .form .contact-form {
+    width: 45vw;
   }
 }
 @media only screen and (min-width: 79.5rem) {
-  .contact-container .contact-form {
+  .contact-footer-wrapper .contact-container .form .contact-form {
     width: 470px;
     text-align: left;
     padding-top: 30px;
   }
 }
-.contact-container .contact-form input {
+.contact-footer-wrapper .contact-container .form .contact-form input {
   background-color: transparent;
   border: none;
   border-bottom: 1px solid #D9D9D9;
@@ -900,11 +1049,11 @@ body {
   color: #FFFFFF;
 }
 @media only screen and (min-width: 32rem) {
-  .contact-container .contact-form input {
+  .contact-footer-wrapper .contact-container .form .contact-form input {
     width: 100%;
   }
 }
-.contact-container .contact-form textarea {
+.contact-footer-wrapper .contact-container .form .contact-form textarea {
   background-color: transparent;
   border: none;
   border-bottom: 1px solid #D9D9D9;
@@ -918,20 +1067,20 @@ body {
   font-family: inherit;
 }
 @media only screen and (min-width: 32rem) {
-  .contact-container .contact-form textarea {
+  .contact-footer-wrapper .contact-container .form .contact-form textarea {
     width: 100%;
   }
 }
-.contact-container .contact-form input:focus, .contact-container .contact-form textarea:focus {
+.contact-footer-wrapper .contact-container .form .contact-form input:focus, .contact-footer-wrapper .contact-container .form .contact-form textarea:focus {
   outline: none;
 }
-.contact-container .contact-form .button {
+.contact-footer-wrapper .contact-container .form .contact-form .button {
   display: flex;
   width: 100%;
   justify-content: flex-end;
   margin-top: 15px;
 }
-.contact-container .contact-form button {
+.contact-footer-wrapper .contact-container .form .contact-form button {
   position: relative;
   padding: 0.7em 1em;
   outline: none;
@@ -948,82 +1097,100 @@ body {
   cursor: pointer;
   font-weight: bold;
 }
-.contact-container .contact-form button:hover {
+.contact-footer-wrapper .contact-container .form .contact-form button:hover {
   box-shadow: 0 0 5px #4EE1A0, 0 0 10px #00ff40, 0 0 20px #D9D9D9;
   transition-delay: 0.6s;
 }
-.contact-container .contact-form button span {
+.contact-footer-wrapper .contact-container .form .contact-form button span {
   position: absolute;
 }
-.contact-container .contact-form button span:nth-child(1) {
+.contact-footer-wrapper .contact-container .form .contact-form button span:nth-child(1) {
   top: 0;
   left: -100%;
   width: 100%;
   height: 2px;
   background: linear-gradient(90deg, transparent, #00ffcc);
 }
-.contact-container .contact-form button:hover span:nth-child(1) {
+.contact-footer-wrapper .contact-container .form .contact-form button:hover span:nth-child(1) {
   left: 100%;
   transition: 0.7s;
 }
-.contact-container .contact-form button span:nth-child(3) {
+.contact-footer-wrapper .contact-container .form .contact-form button span:nth-child(3) {
   bottom: 0;
   right: -100%;
   width: 100%;
   height: 2px;
   background: linear-gradient(90deg, transparent, #00ff9d);
 }
-.contact-container .contact-form button:hover span:nth-child(3) {
+.contact-footer-wrapper .contact-container .form .contact-form button:hover span:nth-child(3) {
   right: 100%;
   transition: 0.7s;
   transition-delay: 0.35s;
 }
-.contact-container .contact-form button span:nth-child(2) {
+.contact-footer-wrapper .contact-container .form .contact-form button span:nth-child(2) {
   top: -100%;
   right: 0;
   width: 2px;
   height: 100%;
   background: linear-gradient(180deg, transparent, #00ffb3);
 }
-.contact-container .contact-form button:hover span:nth-child(2) {
+.contact-footer-wrapper .contact-container .form .contact-form button:hover span:nth-child(2) {
   top: 100%;
   transition: 0.7s;
   transition-delay: 0.17s;
 }
-.contact-container .contact-form button span:nth-child(4) {
+.contact-footer-wrapper .contact-container .form .contact-form button span:nth-child(4) {
   bottom: -100%;
   left: 0;
   width: 2px;
   height: 100%;
   background: linear-gradient(360deg, transparent, #00ff9d);
 }
-.contact-container .contact-form button:hover span:nth-child(4) {
+.contact-footer-wrapper .contact-container .form .contact-form button:hover span:nth-child(4) {
   bottom: 100%;
   transition: 0.7s;
   transition-delay: 0.52s;
 }
-.contact-container .contact-form button:active {
+.contact-footer-wrapper .contact-container .form .contact-form button:active {
   background: #0066af;
   background: linear-gradient(to top right, #00af86, #00ff66);
   color: #bfbfbf;
   box-shadow: 0 0 8px #8cff00, 0 0 8px #00ff3c, 0 0 8px #00ff95;
   transition: 0.1s;
 }
-.contact-container .contact-form button:active span:nth-child(1) span:nth-child(2) span:nth-child(2) span:nth-child(2) {
+.contact-footer-wrapper .contact-container .form .contact-form button:active span:nth-child(1) span:nth-child(2) span:nth-child(2) span:nth-child(2) {
   transition: none;
   transition-delay: none;
 }
-.contact-container .contact-form button {
+.contact-footer-wrapper .contact-container .form .contact-form button {
   background-color: #242424;
   border: transparent;
   border-bottom: 3px solid #4EE1A0;
   font-size: 0.9rem;
 }
 
+/* Hidden */
 .hidden {
   display: none;
 }
 
+/* Button visited */
+.btn, .btn:link, .btn:visited {
+  display: inline-block;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1.6rem;
+  font-weight: 700;
+  letter-spacing: 0.229rem;
+  line-height: 2.6rem;
+  padding-bottom: 1rem;
+  /* only for the .btn itself */
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+/* Button hover */
 * *,
 *::after,
 *::before {
@@ -1052,10 +1219,28 @@ body {
   margin: 0 auto;
 }
 
+/* Hidden */
 .hidden {
   display: none;
 }
 
+/* Button visited */
+.btn, .btn:link, .btn:visited {
+  display: inline-block;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1.6rem;
+  font-weight: 700;
+  letter-spacing: 0.229rem;
+  line-height: 2.6rem;
+  padding-bottom: 1rem;
+  /* only for the .btn itself */
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+/* Button hover */
 footer {
   background-color: #242424;
 }
@@ -1133,12 +1318,40 @@ footer .footer-container div .ring {
     right: 1200px;
   }
 }
-footer .footer-container .social-media a img {
-  margin: 20px 10px;
+footer .footer-container .social-media {
+  display: flex;
+}
+footer .footer-container .social-media a svg {
+  display: flex;
+  margin: 10px 8px;
+  padding-left: 11px;
+}
+footer .footer-container #Oval-1:hover {
+  fill: #4EE1A0;
+  transition: ease-in-out 0.1s all;
 }
 
+/* Hidden */
 .hidden {
   display: none;
 }
+
+/* Button visited */
+.btn, .btn:link, .btn:visited {
+  display: inline-block;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1.6rem;
+  font-weight: 700;
+  letter-spacing: 0.229rem;
+  line-height: 2.6rem;
+  padding-bottom: 1rem;
+  /* only for the .btn itself */
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+/* Button hover */
 
 /*# sourceMappingURL=style.css.map */

@@ -68,8 +68,16 @@ footer{
                 }
             }
         }
-        .social-media a img{
-            margin: 20px 10px;
+        .social-media{
+            display: flex;
+        }
+        .social-media a svg{
+            display: flex;
+            margin: 10px 8px;
+            padding-left: 11px
+        }
+        #Oval-1:hover {
+            fill: $green; transition: ease-in-out 0.1s all;
         }
     }
 }

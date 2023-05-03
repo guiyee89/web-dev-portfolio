@@ -192,6 +192,10 @@ main{
             letter-spacing: 1.5px;
             cursor: pointer;    
             margin-bottom: 25px;
+            &:hover{
+                color: $green;
+                transition: 0.3s ease-in-out;
+            }
             @media only screen and (min-width: $bp-mb-pro) {
                 display: none;
                 color: $black;
@@ -223,6 +227,10 @@ main{
             letter-spacing: 1.5px;
             cursor: pointer;    
             margin-bottom: 25px;
+            &:hover{
+                color: $green;
+                transition: 0.3s ease-in-out;
+            }
             @media only screen and (max-width: $bp-mb-pro) {
                 display: none;
                 color: $black;
