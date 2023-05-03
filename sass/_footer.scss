@@ -38,7 +38,7 @@ footer{
                     right:340px
                 }
                 @media only screen and (min-width:$bp-tab){
-                    right:385px
+                    right:460px
                 }
                 @media only screen and 
                 (min-width:$bp-tabbb-pro){
@@ -50,7 +50,15 @@ footer{
                 }
                 @media only screen and 
                 (min-width:$bp-tabbb-prop){
-                    right:700px
+                    right: 550px;
+                }
+                @media only screen and 
+                (min-width:$bp-spro){
+                    right: 640px;
+                }
+                @media only screen and 
+                (min-width:$bp-ipad-pro){
+                    right: 720px;
                 }
                 @media only screen and (min-width: $bp-bigger-laptop){
                     right: 938px

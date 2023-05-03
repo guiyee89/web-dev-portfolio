@@ -79,11 +79,8 @@ body {
   margin: 0 auto;
   width: 99vw;
   max-width: 1545px;
-  /* @media only screen and (min-width: $bp-first){
-      grid-template-columns: 1fr;
-  } */
   /*  TITLE CONTAINER */
-  /* TEXT - BTN */
+  /* TEXT - BUTTON */
 }
 @media only screen and (min-width: 42rem) {
   .hero {
@@ -360,16 +357,86 @@ body {
   }
 }
 .hero .text-container button {
-  background-color: transparent;
+  position: relative;
+  padding: 0.7em 1em;
+  outline: none;
   border: none;
+  border-bottom: 3px solid #4EE1A0;
+  background: #151515;
   color: #FFFFFF;
-  border-bottom: 2px solid #4EE1A0;
-  padding-bottom: 10px;
-  margin-top: 20px;
-  font-weight: bold;
-  font-size: 1.2rem;
-  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 1.1rem;
+  overflow: hidden;
+  transition: 0.2s;
+  border-radius: 15px;
   cursor: pointer;
+  font-weight: bold;
+}
+.hero .text-container button:hover {
+  box-shadow: 0 0 5px #4EE1A0, 0 0 10px #00ff40, 0 0 20px #D9D9D9;
+  transition-delay: 0.6s;
+}
+.hero .text-container button span {
+  position: absolute;
+}
+.hero .text-container button span:nth-child(1) {
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #00ffcc);
+}
+.hero .text-container button:hover span:nth-child(1) {
+  left: 100%;
+  transition: 0.7s;
+}
+.hero .text-container button span:nth-child(3) {
+  bottom: 0;
+  right: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #00ff9d);
+}
+.hero .text-container button:hover span:nth-child(3) {
+  right: 100%;
+  transition: 0.7s;
+  transition-delay: 0.35s;
+}
+.hero .text-container button span:nth-child(2) {
+  top: -100%;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(180deg, transparent, #00ffb3);
+}
+.hero .text-container button:hover span:nth-child(2) {
+  top: 100%;
+  transition: 0.7s;
+  transition-delay: 0.17s;
+}
+.hero .text-container button span:nth-child(4) {
+  bottom: -100%;
+  left: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(360deg, transparent, #00ff9d);
+}
+.hero .text-container button:hover span:nth-child(4) {
+  bottom: 100%;
+  transition: 0.7s;
+  transition-delay: 0.52s;
+}
+.hero .text-container button:active {
+  background: #0066af;
+  background: linear-gradient(to top right, #00af86, #00ff66);
+  color: #bfbfbf;
+  box-shadow: 0 0 8px #8cff00, 0 0 8px #00ff3c, 0 0 8px #00ff95;
+  transition: 0.1s;
+}
+.hero .text-container button:active span:nth-child(1) span:nth-child(2) span:nth-child(2) span:nth-child(2) {
+  transition: none;
+  transition-delay: none;
 }
 
 .hidden {
@@ -486,24 +553,98 @@ main .skills-container .skills h2 {
   justify-content: space-between;
   max-width: 1215px;
   width: 84vw;
+  /***** BUTTON *****/
 }
 .mid-container h2 {
   font-size: clamp(2.2rem, 5vw + 1.5rem, 6rem);
   color: #FFFFFF;
 }
 .mid-container button {
-  background-color: transparent;
+  position: relative;
+  padding: 0.7em 1em;
+  outline: none;
   border: none;
-  color: #D9D9D9;
-  border-bottom: 2px solid #4EE1A0;
-  padding-bottom: 10px;
-  margin-top: 20px;
-  font-weight: bold;
-  font-size: 0.8rem;
-  letter-spacing: 1.5px;
+  border-bottom: 3px solid #4EE1A0;
+  background: #151515;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 1.1rem;
+  overflow: hidden;
+  transition: 0.2s;
+  border-radius: 15px;
   cursor: pointer;
+  font-weight: bold;
 }
-@media only screen and (min-width: 88.5rem) {
+.mid-container button:hover {
+  box-shadow: 0 0 5px #4EE1A0, 0 0 10px #00ff40, 0 0 20px #D9D9D9;
+  transition-delay: 0.6s;
+}
+.mid-container button span {
+  position: absolute;
+}
+.mid-container button span:nth-child(1) {
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #00ffcc);
+}
+.mid-container button:hover span:nth-child(1) {
+  left: 100%;
+  transition: 0.7s;
+}
+.mid-container button span:nth-child(3) {
+  bottom: 0;
+  right: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #00ff9d);
+}
+.mid-container button:hover span:nth-child(3) {
+  right: 100%;
+  transition: 0.7s;
+  transition-delay: 0.35s;
+}
+.mid-container button span:nth-child(2) {
+  top: -100%;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(180deg, transparent, #00ffb3);
+}
+.mid-container button:hover span:nth-child(2) {
+  top: 100%;
+  transition: 0.7s;
+  transition-delay: 0.17s;
+}
+.mid-container button span:nth-child(4) {
+  bottom: -100%;
+  left: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(360deg, transparent, #00ff9d);
+}
+.mid-container button:hover span:nth-child(4) {
+  bottom: 100%;
+  transition: 0.7s;
+  transition-delay: 0.52s;
+}
+.mid-container button:active {
+  background: #0066af;
+  background: linear-gradient(to top right, #00af86, #00ff66);
+  color: #bfbfbf;
+  box-shadow: 0 0 8px #8cff00, 0 0 8px #00ff3c, 0 0 8px #00ff95;
+  transition: 0.1s;
+}
+.mid-container button:active span:nth-child(1) span:nth-child(2) span:nth-child(2) span:nth-child(2) {
+  transition: none;
+  transition-delay: none;
+}
+.mid-container button {
+  font-size: 0.9rem;
+}
+@media only screen and (min-width: 50.5rem) {
   .mid-container button {
     font-size: 1.1rem;
   }
@@ -515,21 +656,10 @@ main .skills-container .skills h2 {
   margin: -5px;
   width: 84vw;
   max-width: 1250px;
-  /* .project-img{
-      cursor: pointer;
-
-      @media only screen and (min-width: $bp-mb-pro) {
-          display: flex;
-          position: relative;
-          z-index: 0;
-          align-items: center;
-          justify-content: center;
-
-          picture img{
-              max-width: 100%;
-          }
-      }
-  } */
+  /* Projects containers*/
+  /* Small title & Skills used */
+  /* Project Buttons */
+  /* Desktop Project Buttons */
 }
 @media only screen and (min-width: 42rem) {
   .projects-container {
@@ -555,6 +685,12 @@ main .skills-container .skills h2 {
     z-index: 0;
     align-items: center;
     justify-content: center;
+    /* Make displayed:none buttons to appear */
+    /* Create a gray transparent Layer ::before the img */
+    /* Create the opacity on :hover */
+  }
+  .projects-container .project-img:hover .desktop-button {
+    display: flex;
   }
   .projects-container .project-img::before {
     content: "";
@@ -565,21 +701,18 @@ main .skills-container .skills h2 {
     width: 100%;
     height: 100%;
     opacity: 0;
-    background-color: hsla(0, 0%, 0%, 0.5);
-    transition: opacity 0.3s ease-in-out;
+    background-color: hsla(0, 0%, 0%, 0.7);
+    transition: opacity 0.32s ease-in-out;
   }
   .projects-container .project-img:hover::before {
     opacity: 1;
-  }
-  .projects-container .project-img picture img:hover {
-    background-color: hsla(0, 0%, 0%, 0.75) !important;
   }
 }
 .projects-container .project-text {
   margin-left: 6px;
 }
 .projects-container .project-text h3 {
-  padding: 7px 0;
+  padding: 0px 0 7px 0;
   color: #FFFFFF;
   font-size: clamp(1.2rem, 2.5vw + 0.15rem, 1.8rem);
 }
@@ -616,7 +749,40 @@ main .skills-container .skills h2 {
 }
 @media only screen and (min-width: 79.5rem) {
   .projects-container .project-button button {
-    /* display: none; */
+    display: none;
+    color: #151515;
+  }
+}
+.projects-container .desktop-button {
+  margin-bottom: 20px;
+  margin-left: 6px;
+}
+@media only screen and (min-width: 79.5rem) {
+  .projects-container .desktop-button {
+    display: flex;
+    position: absolute;
+    z-index: 1;
+    flex-direction: column;
+    display: none;
+  }
+}
+.projects-container .desktop-button button {
+  background-color: transparent;
+  border: none;
+  color: #FFFFFF;
+  border-bottom: 2px solid #4EE1A0;
+  padding-bottom: 10px;
+  margin-top: 30px;
+  margin-right: 25px;
+  font-weight: 700;
+  font-size: 1rem;
+  letter-spacing: 1.5px;
+  cursor: pointer;
+  margin-bottom: 25px;
+}
+@media only screen and (max-width: 79.5rem) {
+  .projects-container .desktop-button button {
+    display: none;
     color: #151515;
   }
 }
@@ -662,6 +828,8 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  /* ==== Title ==== */
+  /* ===== Form ===== */
 }
 @media only screen and (min-width: 79.5rem) {
   .contact-container {
@@ -706,6 +874,7 @@ body {
   align-items: center;
   padding-bottom: 50px;
   position: relative;
+  /* ==== Button ==== */
 }
 @media only screen and (min-width: 32rem) {
   .contact-container .contact-form {
@@ -760,18 +929,95 @@ body {
   display: flex;
   width: 100%;
   justify-content: flex-end;
+  margin-top: 15px;
 }
 .contact-container .contact-form button {
-  background-color: transparent;
+  position: relative;
+  padding: 0.7em 1em;
+  outline: none;
   border: none;
+  border-bottom: 3px solid #4EE1A0;
+  background: #151515;
   color: #FFFFFF;
-  border-bottom: 2px solid #4EE1A0;
-  padding-bottom: 10px;
-  margin-top: 40px;
-  font-weight: bold;
-  font-size: 1rem;
-  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 1.1rem;
+  overflow: hidden;
+  transition: 0.2s;
+  border-radius: 15px;
   cursor: pointer;
+  font-weight: bold;
+}
+.contact-container .contact-form button:hover {
+  box-shadow: 0 0 5px #4EE1A0, 0 0 10px #00ff40, 0 0 20px #D9D9D9;
+  transition-delay: 0.6s;
+}
+.contact-container .contact-form button span {
+  position: absolute;
+}
+.contact-container .contact-form button span:nth-child(1) {
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #00ffcc);
+}
+.contact-container .contact-form button:hover span:nth-child(1) {
+  left: 100%;
+  transition: 0.7s;
+}
+.contact-container .contact-form button span:nth-child(3) {
+  bottom: 0;
+  right: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #00ff9d);
+}
+.contact-container .contact-form button:hover span:nth-child(3) {
+  right: 100%;
+  transition: 0.7s;
+  transition-delay: 0.35s;
+}
+.contact-container .contact-form button span:nth-child(2) {
+  top: -100%;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(180deg, transparent, #00ffb3);
+}
+.contact-container .contact-form button:hover span:nth-child(2) {
+  top: 100%;
+  transition: 0.7s;
+  transition-delay: 0.17s;
+}
+.contact-container .contact-form button span:nth-child(4) {
+  bottom: -100%;
+  left: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(360deg, transparent, #00ff9d);
+}
+.contact-container .contact-form button:hover span:nth-child(4) {
+  bottom: 100%;
+  transition: 0.7s;
+  transition-delay: 0.52s;
+}
+.contact-container .contact-form button:active {
+  background: #0066af;
+  background: linear-gradient(to top right, #00af86, #00ff66);
+  color: #bfbfbf;
+  box-shadow: 0 0 8px #8cff00, 0 0 8px #00ff3c, 0 0 8px #00ff95;
+  transition: 0.1s;
+}
+.contact-container .contact-form button:active span:nth-child(1) span:nth-child(2) span:nth-child(2) span:nth-child(2) {
+  transition: none;
+  transition-delay: none;
+}
+.contact-container .contact-form button {
+  background-color: #242424;
+  border: transparent;
+  border-bottom: 3px solid #4EE1A0;
+  font-size: 0.9rem;
 }
 
 .hidden {
@@ -849,7 +1095,7 @@ footer .footer-container div .ring {
 }
 @media only screen and (min-width: 42rem) {
   footer .footer-container div .ring {
-    right: 385px;
+    right: 460px;
   }
 }
 @media only screen and (min-width: 51rem) {
@@ -864,7 +1110,17 @@ footer .footer-container div .ring {
 }
 @media only screen and (min-width: 52rem) {
   footer .footer-container div .ring {
-    right: 700px;
+    right: 550px;
+  }
+}
+@media only screen and (min-width: 57rem) {
+  footer .footer-container div .ring {
+    right: 640px;
+  }
+}
+@media only screen and (min-width: 62.5rem) {
+  footer .footer-container div .ring {
+    right: 720px;
   }
 }
 @media only screen and (min-width: 88.5rem) {

@@ -15,7 +15,7 @@
         align-items: normal;
         justify-content: space-around;
     }
-
+    /* ==== Title ==== */
     .contact-title-text{
         margin: 10px;
         text-align: center;
@@ -41,6 +41,7 @@
         }
     }
 
+    /* ===== Form ===== */
     .contact-form{
         display: flex;
         flex-direction: column;
@@ -90,23 +91,21 @@
         input:focus, textarea:focus {
             outline: none;
           }
-        
+
+        /* ==== Button ==== */
         .button{
             display: flex;
             width: 100%;
             justify-content: flex-end;
+            margin-top: 15px;
         }
+
+        @include btn-hover;
         button{
-            background-color: transparent;
-            border: none;
-            color: $white;
-            border-bottom: 2px solid $green;
-            padding-bottom: 10px;
-            margin-top: 40px;
-            font-weight: bold;
-            font-size: 1rem;
-            letter-spacing: 1.5px;
-            cursor: pointer;       
+            background-color: $gray;
+            border: transparent;
+            border-bottom: 3px solid $green;
+            font-size: .9rem;
         }
     }
 }
