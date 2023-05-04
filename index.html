@@ -22,7 +22,7 @@
  
     <header class="header">
       <div>
-        <a href="#" aria-label="Adam keyes home" class="logo"><span>adamkeyes</span></a>
+        <a href="#header" aria-label="Adam keyes home" class="logo" id="header"><span>adamkeyes</span></a>
       </div>
       <div class="social-media">
         
@@ -106,7 +106,7 @@
     </div>
     <div class="text-container">
       <p>Based in the UK, i'm a front-end developer passionate about building accessible web apps that users love.<p>
-      <button>
+      <button onclick="window.location.href='#contact-section'">
         <span></span>
         <span></span>
         <span></span>
@@ -154,7 +154,7 @@
 
       <!-- Solo Rings -->
       <h2>Projects</h2>
-      <button>
+      <button onclick="window.location.href='#contact-section'">
         <span></span>
         <span></span>
         <span></span>
@@ -329,7 +329,7 @@
   <!--   =====================     -->
   <!--          Contact            -->
   <!--   =====================     -->
-  <div class="contact-footer-wrapper">
+  <div class="contact-footer-wrapper" id="contact-section">
     <section class="contact-container">
     <div class="contact-title-text">
       <h2>Contact</h2>
@@ -339,13 +339,15 @@
       <form class="contact-form">
         <label class="hidden" for="name">Name</label>
         <input type="text" name="name" id="name"  placeholder="NAME" autocomplete="name" required>
-        <small></small>
+        <small id="invalid-format" class="hidden" >Sorry, invalid format here</small>
+        <small id="empty-field">Sorry, complete this field</small>
         <label class="hidden" for="email">Email</label>
         <input type="text" name="email" id="email"  placeholder="EMAIL" autocomplete="email" required>
-        <small></small>
+        <small id="invalid-format" >Sorry, invalid format here</small>
+        <small id="empty-field">Sorry, complete this field</small>
         <label class="hidden" for="message">Message</label>
         <textarea name="message" id="message" rows="4"  cols="50" placeholder="MESSAGE" required></textarea>
-        <small></small>
+        <small id="empty-field">Sorry, complete with a message</small>
         <div
         class="button">
         <button>
@@ -364,7 +366,7 @@
   <footer>
     <div class="footer-container">
       <div>
-        <a href="#" aria-label="Adam keyes home" class="logo">adamkeyes</a>
+        <a href="#header" aria-label="Adam keyes home" class="logo">adamkeyes</a>
         <img class="ring" src="./assets/images/pattern-rings.svg" alt="">
       </div>
       <div class="social-media">

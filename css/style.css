@@ -41,6 +41,7 @@ html {
   font-family: "Space Grotesk", sans serif;
   width: 100%;
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -92,6 +93,7 @@ html {
   font-family: "Space Grotesk", sans serif;
   width: 100%;
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -629,6 +631,7 @@ html {
   font-family: "Space Grotesk", sans serif;
   width: 100%;
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -1025,6 +1028,7 @@ html {
   font-family: "Space Grotesk", sans serif;
   width: 100%;
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -1316,6 +1320,7 @@ html {
   font-family: "Space Grotesk", sans serif;
   width: 100%;
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 body {
