@@ -42,13 +42,17 @@ $bp-4k: 160rem; // 2560px 4k
 .hidden{
     display: none;
 }
+/* <small> contact error message */
 .invalid-format, .empty-field{
   color: rgb(234 78 65);
   text-align: end;
   width: 100%;
   padding: 5px;
 }
-
+/* Alert successful message  */
+.swal2-container.swal2-center>.swal2-popup{
+  padding-bottom: 70px;
+}
 /* Button visited */
 .btn {
     &,
@@ -70,7 +74,6 @@ $bp-4k: 160rem; // 2560px 4k
   
     }
 }
-
 /* Button hover */
 @mixin btn-hover{
     button {
@@ -172,8 +175,9 @@ $bp-4k: 160rem; // 2560px 4k
        }
        
 }
-
-/****** LOGO *******/
+/*****************************/
+/*******     LOGO     *******/
+/***************************/
 @mixin logo{
    
         span,span::after {

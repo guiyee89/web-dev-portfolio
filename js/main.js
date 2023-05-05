@@ -1,60 +1,87 @@
 
- /* Declare the error messages and send button outside the function */
- const invalidFormat = document.querySelector(".invalid-format")
- const emptyField = document.querySelector(".empty-field")
- const errorIcon = document.querySelector(".bi")
- const sendMessageButton = document.querySelector("#send-message-button")
+const inputName = document.querySelector("#name");
+const inputEmail = document.querySelector("#email");
+const inputMessage = document.querySelector("#message");
 
-//***************************//
-//     Validate Function     //
-//***************************//
-const validation = () => {
-  
-  /* Declare the input values inside fuction */
-  const inputName = document.querySelector("#name").value;
-  const inputEmail = document.querySelector("#email").value;
-  const inputMessage = document.querySelector("#message").value;
+const invalidFormat = document.querySelectorAll(".invalid-format");
+const emptyField = document.querySelectorAll(".empty-field");
+const errorIcon = document.querySelectorAll(".bi");
 
-  /* Regular Expresion Name */
-  const regExpName = /^[\w'\-,.][^0-9_!¡?÷?¿/\\+=@#$%ˆ&*(){}|~<>;:[\]]{2,}$/
-  /* Regular Expresion Email */
-  const regExpEmail = /^(([^<>()\[\]\\.,;:\s@""]+(\.[^<>()\[\]\\.,;:\s@""]+)*)|("".+""))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+const regExpName = /^[\w'\-,.][^0-9_!¡?÷?¿/\\+=@#$%ˆ&*(){}|~<>;:[\]]{2,}$/;
+const regExpEmail = /^(([^<>()\[\]\\.,;:\s@""]+(\.[^<>()\[\]\\.,;:\s@""]+)*)|("".+""))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 
-  if(!inputName && !inputEmail){
-    emptyField.classList.remove("hidden");
-    invalidFormat.classList.add("hidden");
-    errorIcon.classList.remove("hidden")
-  }else if(!regExpName.test(inputName) && !inputEmail){
-    invalidFormat.classList.remove("hidden");
-    emptyField.classList.add("hidden");
-    errorIcon.classList.remove("hidden")
-  }else {
-    invalidFormat.classList.add("hidden");
-    emptyField.classList.add("hidden");
-    errorIcon.classList.add("hidden")
-    return inputName && inputEmail
+function validateForm() {
+  let isValid = true;
+
+  /* Validate name format */
+  if (!regExpName.test(inputName.value.trim())) {
+    if (inputName.value.trim() === "") {
+      emptyField[0].classList.remove("hidden");
+      invalidFormat[0].classList.add("hidden");
+      errorIcon[0].classList.remove("hidden");
+    } else {
+      emptyField[0].classList.add("hidden");
+      invalidFormat[0].classList.remove("hidden");
+      errorIcon[0].classList.remove("hidden");
+    }
+    isValid = false;
+  } else {
+    emptyField[0].classList.add("hidden");
+    invalidFormat[0].classList.add("hidden");
+    errorIcon[0].classList.add("hidden");
   }
 
- /* if(!inputEmail){
-   emptyField.classList.remove("hidden");
-   invalidFormat.classList.add("hidden");
-   errorIcon.classList.remove("hidden")
- }else if(!regExpEmail.test(inputEmail)){
-   invalidFormat.classList.remove("hidden");
-   emptyField.classList.add("hidden");
-   errorIcon.classList.remove("hidden")
- }else {
-   invalidFormat.classList.add("hidden");
-   emptyField.classList.add("hidden");
-   errorIcon.classList.add("hidden")
-   return inputEmail
- } */
-  
+
+  /* Validate email format */
+  if (!regExpEmail.test(inputEmail.value.trim())) {
+    if (inputEmail.value.trim() === "") {
+      emptyField[1].classList.remove("hidden");
+      invalidFormat[1].classList.add("hidden");
+      errorIcon[1].classList.remove("hidden");
+    } else {
+      emptyField[1].classList.add("hidden");
+      invalidFormat[1].classList.remove("hidden");
+      errorIcon[1].classList.remove("hidden");
+    }
+    isValid = false;
+  } else {
+    emptyField[1].classList.add("hidden");
+    invalidFormat[1].classList.add("hidden");
+    errorIcon[1].classList.add("hidden");
+  }
+
+  /* Validate filled message */
+  if (inputMessage.value.trim() === "") {
+    emptyField[2].classList.remove("hidden");
+    errorIcon[2].classList.remove("hidden");
+    isValid = false;
+  } else {
+    emptyField[2].classList.add("hidden");
+    errorIcon[2].classList.add("hidden");
+  }
+
+  return isValid
+
 }
 
-sendMessageButton.addEventListener("click", (event) => {
+const sendMessageButton = document.querySelector("#send-message-button");
+
+sendMessageButton.addEventListener("click", function (event) {
   event.preventDefault();
-  validation();
-  console.log(validation())
+  if(validateForm()){
+    Swal.fire({
+      position: 'center',
+      icon: 'success',
+      title: "Thanks for your message!\n\nI will respond to you Asap!",
+      showConfirmButton: false,
+      timer: 2500,
+    })
+  }
+  if(validateForm()){
+    setTimeout(() =>{
+      let form = document.querySelector(".contact-form");
+      form.reset();
+    },2000)
+  }
 });
 

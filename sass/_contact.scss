@@ -75,12 +75,18 @@
                     text-align: left;
                     padding-top: 30px;
                 }
+
+                /* Inputs for email and name */
                 .input-container-1,
                 .input-container-2,
                 .input-container-3{
                     align-items: end;
                     display: flex;
                     position: relative;
+
+                    .input-container-2{
+                        margin: 10px;          
+                    }
                     input{
                         background-color: transparent;
                         border: none;
@@ -89,13 +95,14 @@
                         padding: 1.7rem 1.4rem .7rem 1.4rem;
                         font-weight: bold;
                         font-size: 1rem;
-                        text-transform: uppercase;
                         color: $white;
+
                         @media only screen and  (min-width:$bp-first){
                             width: 70vw;
                             max-width: 435px;
                         }
                     }
+                    /* Exclamation error icon */
                     .bi{
                         position: absolute;
                         right: 5px;
@@ -104,7 +111,7 @@
                         font-size: 25px;
                     }
                 }
-                
+                /* Message area */
                 textarea{
                     background-color: transparent;
                     border: none;
@@ -113,8 +120,7 @@
                     width: 80vw;
                     padding: 1.7rem 1.4rem .7rem 1.4rem;
                     font-weight: bold;
-                    font-size: 1.2rem;
-                    text-transform: uppercase;
+                    font-size: 1.1rem;
                     color: $white;
                     font-family: inherit;
                     @media only screen and  (min-width:$bp-first){
@@ -122,9 +128,25 @@
                         max-width: 435px;
                     }
                 }
+                /* Eliminate outline default style on click */
                 input:focus, textarea:focus {
                     outline: none;
                 }
+                /* Eliminate default style on autocomplete */
+                input:-webkit-autofill,
+                input:-webkit-autofill:hover,
+                input:-webkit-autofill:focus,
+                textarea:-webkit-autofill,
+                textarea:-webkit-autofill:hover,
+                textarea:-webkit-autofill:focus,
+                select:-webkit-autofill,
+                select:-webkit-autofill:hover,
+                select:-webkit-autofill:focus {
+                    -webkit-text-fill-color: $white;
+                    -webkit-box-shadow: 0 0 0px 1000px $gray inset;
+                    transition: background-color 5000s ease-in-out0s;
+                }
+
                 /* ================= */
                 /* ==== Button ==== */
                 /* ================ */
@@ -142,7 +164,7 @@
                     border-bottom: 3px solid $green;
                     font-size: .9rem;
                 }
-            }
+            }         
         }
     }
 }

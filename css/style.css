@@ -13,11 +13,17 @@
   display: none;
 }
 
+/* <small> contact error message */
 .invalid-format, .empty-field {
   color: rgb(234, 78, 65);
   text-align: end;
   width: 100%;
   padding: 5px;
+}
+
+/* Alert successful message  */
+.swal2-container.swal2-center > .swal2-popup {
+  padding-bottom: 70px;
 }
 
 /* Button visited */
@@ -37,7 +43,9 @@
 }
 
 /* Button hover */
-/****** LOGO *******/
+/*****************************/
+/*******     LOGO     *******/
+/***************************/
 * *,
 *::after,
 *::before {
@@ -72,11 +80,17 @@ body {
   display: none;
 }
 
+/* <small> contact error message */
 .invalid-format, .empty-field {
   color: rgb(234, 78, 65);
   text-align: end;
   width: 100%;
   padding: 5px;
+}
+
+/* Alert successful message  */
+.swal2-container.swal2-center > .swal2-popup {
+  padding-bottom: 70px;
 }
 
 /* Button visited */
@@ -96,7 +110,9 @@ body {
 }
 
 /* Button hover */
-/****** LOGO *******/
+/*****************************/
+/*******     LOGO     *******/
+/***************************/
 * *,
 *::after,
 *::before {
@@ -131,11 +147,17 @@ body {
   display: none;
 }
 
+/* <small> contact error message */
 .invalid-format, .empty-field {
   color: rgb(234, 78, 65);
   text-align: end;
   width: 100%;
   padding: 5px;
+}
+
+/* Alert successful message  */
+.swal2-container.swal2-center > .swal2-popup {
+  padding-bottom: 70px;
 }
 
 /* Button visited */
@@ -155,7 +177,9 @@ body {
 }
 
 /* Button hover */
-/****** LOGO *******/
+/*****************************/
+/*******     LOGO     *******/
+/***************************/
 .hero {
   display: grid;
   position: relative;
@@ -624,11 +648,17 @@ body {
   display: none;
 }
 
+/* <small> contact error message */
 .invalid-format, .empty-field {
   color: rgb(234, 78, 65);
   text-align: end;
   width: 100%;
   padding: 5px;
+}
+
+/* Alert successful message  */
+.swal2-container.swal2-center > .swal2-popup {
+  padding-bottom: 70px;
 }
 
 /* Button visited */
@@ -648,7 +678,9 @@ body {
 }
 
 /* Button hover */
-/****** LOGO *******/
+/*****************************/
+/*******     LOGO     *******/
+/***************************/
 * *,
 *::after,
 *::before {
@@ -683,11 +715,17 @@ body {
   display: none;
 }
 
+/* <small> contact error message */
 .invalid-format, .empty-field {
   color: rgb(234, 78, 65);
   text-align: end;
   width: 100%;
   padding: 5px;
+}
+
+/* Alert successful message  */
+.swal2-container.swal2-center > .swal2-popup {
+  padding-bottom: 70px;
 }
 
 /* Button visited */
@@ -707,7 +745,9 @@ body {
 }
 
 /* Button hover */
-/****** LOGO *******/
+/*****************************/
+/*******     LOGO     *******/
+/***************************/
 main {
   display: flex;
   flex-direction: column;
@@ -1035,11 +1075,17 @@ main .skills-container .skills h2 {
   display: none;
 }
 
+/* <small> contact error message */
 .invalid-format, .empty-field {
   color: rgb(234, 78, 65);
   text-align: end;
   width: 100%;
   padding: 5px;
+}
+
+/* Alert successful message  */
+.swal2-container.swal2-center > .swal2-popup {
+  padding-bottom: 70px;
 }
 
 /* Button visited */
@@ -1059,7 +1105,9 @@ main .skills-container .skills h2 {
 }
 
 /* Button hover */
-/****** LOGO *******/
+/*****************************/
+/*******     LOGO     *******/
+/***************************/
 * *,
 *::after,
 *::before {
@@ -1094,11 +1142,17 @@ body {
   display: none;
 }
 
+/* <small> contact error message */
 .invalid-format, .empty-field {
   color: rgb(234, 78, 65);
   text-align: end;
   width: 100%;
   padding: 5px;
+}
+
+/* Alert successful message  */
+.swal2-container.swal2-center > .swal2-popup {
+  padding-bottom: 70px;
 }
 
 /* Button visited */
@@ -1118,7 +1172,9 @@ body {
 }
 
 /* Button hover */
-/****** LOGO *******/
+/*****************************/
+/*******     LOGO     *******/
+/***************************/
 .contact-footer-wrapper {
   background-color: #242424;
 }
@@ -1194,6 +1250,10 @@ body {
   padding: 15px 25px 50px 10px;
   position: relative;
   margin: 0 auto;
+  /* Inputs for email and name */
+  /* Message area */
+  /* Eliminate outline default style on click */
+  /* Eliminate default style on autocomplete */
   /* ================= */
   /* ==== Button ==== */
   /* ================ */
@@ -1211,6 +1271,12 @@ body {
   align-items: end;
   display: flex;
   position: relative;
+  /* Exclamation error icon */
+}
+.contact-footer-wrapper .contact-container .form .contact-form .input-container-1 .input-container-2,
+.contact-footer-wrapper .contact-container .form .contact-form .input-container-2 .input-container-2,
+.contact-footer-wrapper .contact-container .form .contact-form .input-container-3 .input-container-2 {
+  margin: 10px;
 }
 .contact-footer-wrapper .contact-container .form .contact-form .input-container-1 input,
 .contact-footer-wrapper .contact-container .form .contact-form .input-container-2 input,
@@ -1222,7 +1288,6 @@ body {
   padding: 1.7rem 1.4rem 0.7rem 1.4rem;
   font-weight: bold;
   font-size: 1rem;
-  text-transform: uppercase;
   color: #FFFFFF;
 }
 @media only screen and (min-width: 32rem) {
@@ -1250,8 +1315,7 @@ body {
   width: 80vw;
   padding: 1.7rem 1.4rem 0.7rem 1.4rem;
   font-weight: bold;
-  font-size: 1.2rem;
-  text-transform: uppercase;
+  font-size: 1.1rem;
   color: #FFFFFF;
   font-family: inherit;
 }
@@ -1263,6 +1327,19 @@ body {
 }
 .contact-footer-wrapper .contact-container .form .contact-form input:focus, .contact-footer-wrapper .contact-container .form .contact-form textarea:focus {
   outline: none;
+}
+.contact-footer-wrapper .contact-container .form .contact-form input:-webkit-autofill,
+.contact-footer-wrapper .contact-container .form .contact-form input:-webkit-autofill:hover,
+.contact-footer-wrapper .contact-container .form .contact-form input:-webkit-autofill:focus,
+.contact-footer-wrapper .contact-container .form .contact-form textarea:-webkit-autofill,
+.contact-footer-wrapper .contact-container .form .contact-form textarea:-webkit-autofill:hover,
+.contact-footer-wrapper .contact-container .form .contact-form textarea:-webkit-autofill:focus,
+.contact-footer-wrapper .contact-container .form .contact-form select:-webkit-autofill,
+.contact-footer-wrapper .contact-container .form .contact-form select:-webkit-autofill:hover,
+.contact-footer-wrapper .contact-container .form .contact-form select:-webkit-autofill:focus {
+  -webkit-text-fill-color: #FFFFFF;
+  -webkit-box-shadow: 0 0 0px 1000px #242424 inset;
+  transition: background-color 5000s ease-in-out0s;
 }
 .contact-footer-wrapper .contact-container .form .contact-form .button {
   display: flex;
@@ -1364,11 +1441,17 @@ body {
   display: none;
 }
 
+/* <small> contact error message */
 .invalid-format, .empty-field {
   color: rgb(234, 78, 65);
   text-align: end;
   width: 100%;
   padding: 5px;
+}
+
+/* Alert successful message  */
+.swal2-container.swal2-center > .swal2-popup {
+  padding-bottom: 70px;
 }
 
 /* Button visited */
@@ -1388,7 +1471,9 @@ body {
 }
 
 /* Button hover */
-/****** LOGO *******/
+/*****************************/
+/*******     LOGO     *******/
+/***************************/
 * *,
 *::after,
 *::before {
@@ -1423,11 +1508,17 @@ body {
   display: none;
 }
 
+/* <small> contact error message */
 .invalid-format, .empty-field {
   color: rgb(234, 78, 65);
   text-align: end;
   width: 100%;
   padding: 5px;
+}
+
+/* Alert successful message  */
+.swal2-container.swal2-center > .swal2-popup {
+  padding-bottom: 70px;
 }
 
 /* Button visited */
@@ -1447,7 +1538,9 @@ body {
 }
 
 /* Button hover */
-/****** LOGO *******/
+/*****************************/
+/*******     LOGO     *******/
+/***************************/
 footer {
   background-color: #242424;
 }
@@ -1543,11 +1636,17 @@ footer .footer-container #Oval-1:hover {
   display: none;
 }
 
+/* <small> contact error message */
 .invalid-format, .empty-field {
   color: rgb(234, 78, 65);
   text-align: end;
   width: 100%;
   padding: 5px;
+}
+
+/* Alert successful message  */
+.swal2-container.swal2-center > .swal2-popup {
+  padding-bottom: 70px;
 }
 
 /* Button visited */
@@ -1567,6 +1666,8 @@ footer .footer-container #Oval-1:hover {
 }
 
 /* Button hover */
-/****** LOGO *******/
+/*****************************/
+/*******     LOGO     *******/
+/***************************/
 
 /*# sourceMappingURL=style.css.map */
