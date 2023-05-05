@@ -4,6 +4,16 @@
 ## Welcome! 👋
 This project showcases my front-end development skills by creating a responsive contact form using HTML, CSS, and JavaScript. The form includes various input fields and validation for user input, ensuring that all required fields are completed and in the correct format. The design of the form was carefully crafted using CSS, making use of modern techniques like flexbox and grid to create a clean and intuitive user interface. Overall, this project demonstrates my proficiency in web development, particularly in HTML, CSS, and JavaScript.
 
+## Table of contents
+
+- [Links](#links)
+- [Built with](#built-with)
+- [What I learned](#what-i-learned)
+- [Continued development](#continued-development)
+
+
+
+
 ### Built with 🧱
 
 - Semantic HTML5 markup
@@ -17,14 +27,6 @@ This project showcases my front-end development skills by creating a responsive 
 
 - Live Site URL 🔴: [https://guiyee89.github.io/web-dev-portfolio/]
 - My Front-end Mentor profile 👦: [https://www.frontendmentor.io/profile/guiyee89]
-
-
-## Table of contents
-
-- [What I learned](#what-i-learned)
-- [Continued development](#continued-development)
-- [Author](#author)
-- [Acknowledgments](#acknowledgments)
 
 
 ### What I learned
