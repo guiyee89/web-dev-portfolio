@@ -1,11 +1,23 @@
 @import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&display=swap");
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css");
 @import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&display=swap");
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css");
 @import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&display=swap");
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css");
 @import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&display=swap");
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css");
 @import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&display=swap");
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css");
 /* Hidden */
 .hidden {
   display: none;
+}
+
+.invalid-format, .empty-field {
+  color: rgb(234, 78, 65);
+  text-align: end;
+  width: 100%;
+  padding: 5px;
 }
 
 /* Button visited */
@@ -60,6 +72,13 @@ body {
   display: none;
 }
 
+.invalid-format, .empty-field {
+  color: rgb(234, 78, 65);
+  text-align: end;
+  width: 100%;
+  padding: 5px;
+}
+
 /* Button visited */
 .btn, .btn:link, .btn:visited {
   display: inline-block;
@@ -110,6 +129,13 @@ body {
 /* Hidden */
 .hidden {
   display: none;
+}
+
+.invalid-format, .empty-field {
+  color: rgb(234, 78, 65);
+  text-align: end;
+  width: 100%;
+  padding: 5px;
 }
 
 /* Button visited */
@@ -598,6 +624,13 @@ body {
   display: none;
 }
 
+.invalid-format, .empty-field {
+  color: rgb(234, 78, 65);
+  text-align: end;
+  width: 100%;
+  padding: 5px;
+}
+
 /* Button visited */
 .btn, .btn:link, .btn:visited {
   display: inline-block;
@@ -648,6 +681,13 @@ body {
 /* Hidden */
 .hidden {
   display: none;
+}
+
+.invalid-format, .empty-field {
+  color: rgb(234, 78, 65);
+  text-align: end;
+  width: 100%;
+  padding: 5px;
 }
 
 /* Button visited */
@@ -995,6 +1035,13 @@ main .skills-container .skills h2 {
   display: none;
 }
 
+.invalid-format, .empty-field {
+  color: rgb(234, 78, 65);
+  text-align: end;
+  width: 100%;
+  padding: 5px;
+}
+
 /* Button visited */
 .btn, .btn:link, .btn:visited {
   display: inline-block;
@@ -1047,6 +1094,13 @@ body {
   display: none;
 }
 
+.invalid-format, .empty-field {
+  color: rgb(234, 78, 65);
+  text-align: end;
+  width: 100%;
+  padding: 5px;
+}
+
 /* Button visited */
 .btn, .btn:link, .btn:visited {
   display: inline-block;
@@ -1076,10 +1130,14 @@ body {
   width: 100vw;
   max-width: 1500px;
   margin: 0 auto;
-  /* ==== Title ==== */
+  /* ================= */
+  /* ===== Title ===== */
+  /* ================= */
+  /* ================= */
   /* ===== Form ===== */
+  /* ================ */
 }
-@media only screen and (min-width: 79.5rem) {
+@media only screen and (min-width: 62.5rem) {
   .contact-footer-wrapper .contact-container {
     flex-direction: row;
     align-items: normal;
@@ -1136,12 +1194,9 @@ body {
   padding: 15px 25px 50px 10px;
   position: relative;
   margin: 0 auto;
+  /* ================= */
   /* ==== Button ==== */
-}
-@media only screen and (min-width: 32rem) {
-  .contact-footer-wrapper .contact-container .form .contact-form {
-    width: 65%;
-  }
+  /* ================ */
 }
 @media only screen and (min-width: 79.5rem) {
   .contact-footer-wrapper .contact-container .form .contact-form {
@@ -1150,7 +1205,16 @@ body {
     padding-top: 30px;
   }
 }
-.contact-footer-wrapper .contact-container .form .contact-form input {
+.contact-footer-wrapper .contact-container .form .contact-form .input-container-1,
+.contact-footer-wrapper .contact-container .form .contact-form .input-container-2,
+.contact-footer-wrapper .contact-container .form .contact-form .input-container-3 {
+  align-items: end;
+  display: flex;
+  position: relative;
+}
+.contact-footer-wrapper .contact-container .form .contact-form .input-container-1 input,
+.contact-footer-wrapper .contact-container .form .contact-form .input-container-2 input,
+.contact-footer-wrapper .contact-container .form .contact-form .input-container-3 input {
   background-color: transparent;
   border: none;
   border-bottom: 1px solid #D9D9D9;
@@ -1162,9 +1226,21 @@ body {
   color: #FFFFFF;
 }
 @media only screen and (min-width: 32rem) {
-  .contact-footer-wrapper .contact-container .form .contact-form input {
-    width: 100%;
+  .contact-footer-wrapper .contact-container .form .contact-form .input-container-1 input,
+  .contact-footer-wrapper .contact-container .form .contact-form .input-container-2 input,
+  .contact-footer-wrapper .contact-container .form .contact-form .input-container-3 input {
+    width: 70vw;
+    max-width: 435px;
   }
+}
+.contact-footer-wrapper .contact-container .form .contact-form .input-container-1 .bi,
+.contact-footer-wrapper .contact-container .form .contact-form .input-container-2 .bi,
+.contact-footer-wrapper .contact-container .form .contact-form .input-container-3 .bi {
+  position: absolute;
+  right: 5px;
+  color: rgb(234, 78, 65);
+  padding-bottom: 7px;
+  font-size: 25px;
 }
 .contact-footer-wrapper .contact-container .form .contact-form textarea {
   background-color: transparent;
@@ -1181,7 +1257,8 @@ body {
 }
 @media only screen and (min-width: 32rem) {
   .contact-footer-wrapper .contact-container .form .contact-form textarea {
-    width: 100%;
+    width: 70vw;
+    max-width: 435px;
   }
 }
 .contact-footer-wrapper .contact-container .form .contact-form input:focus, .contact-footer-wrapper .contact-container .form .contact-form textarea:focus {
@@ -1287,6 +1364,13 @@ body {
   display: none;
 }
 
+.invalid-format, .empty-field {
+  color: rgb(234, 78, 65);
+  text-align: end;
+  width: 100%;
+  padding: 5px;
+}
+
 /* Button visited */
 .btn, .btn:link, .btn:visited {
   display: inline-block;
@@ -1337,6 +1421,13 @@ body {
 /* Hidden */
 .hidden {
   display: none;
+}
+
+.invalid-format, .empty-field {
+  color: rgb(234, 78, 65);
+  text-align: end;
+  width: 100%;
+  padding: 5px;
 }
 
 /* Button visited */
@@ -1450,6 +1541,13 @@ footer .footer-container #Oval-1:hover {
 /* Hidden */
 .hidden {
   display: none;
+}
+
+.invalid-format, .empty-field {
+  color: rgb(234, 78, 65);
+  text-align: end;
+  width: 100%;
+  padding: 5px;
 }
 
 /* Button visited */

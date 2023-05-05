@@ -338,19 +338,28 @@
     <section class="form">
       <form class="contact-form">
         <label class="hidden" for="name">Name</label>
-        <input type="text" name="name" id="name"  placeholder="NAME" autocomplete="name" required>
-        <small id="invalid-format" class="hidden" >Sorry, invalid format here</small>
-        <small id="empty-field">Sorry, complete this field</small>
+        <div class="input-container-1">
+          <input type="text" name="name" id="name" placeholder="NAME" autocomplete="name" class="input-field">
+          <i class="bi bi-exclamation-circle hidden"></i>
+        </div>
+        <small class="invalid-format hidden">Invalid format</small>
+        <small class="empty-field hidden">complete this field</small>
         <label class="hidden" for="email">Email</label>
-        <input type="text" name="email" id="email"  placeholder="EMAIL" autocomplete="email" required>
-        <small id="invalid-format" >Sorry, invalid format here</small>
-        <small id="empty-field">Sorry, complete this field</small>
+        <div class="input-container-2">
+          <input type="text" name="email" id="email"  placeholder="EMAIL" autocomplete="email" class="input-field">
+          <i  class="bi bi-exclamation-circle hidden"></i>
+        </div>
+        <small class="invalid-format hidden">Invalid format</small>
+        <small class="empty-field hidden">complete this field</small>
         <label class="hidden" for="message">Message</label>
-        <textarea name="message" id="message" rows="4"  cols="50" placeholder="MESSAGE" required></textarea>
-        <small id="empty-field">Sorry, complete with a message</small>
+        <div class="input-container-3">
+          <textarea name="message" id="message" rows="4"  cols="50" placeholder="MESSAGE" class="input-field" ></textarea>
+          <i  class="bi bi-exclamation-circle hidden"></i>
+        </div>
+        <small class="empty-field hidden">Complete with a message</small>
         <div
         class="button">
-        <button>
+        <button id="send-message-button">
         <span></span>
         <span></span>
         <span></span>

@@ -42,6 +42,12 @@ $bp-4k: 160rem; // 2560px 4k
 .hidden{
     display: none;
 }
+.invalid-format, .empty-field{
+  color: rgb(234 78 65);
+  text-align: end;
+  width: 100%;
+  padding: 5px;
+}
 
 /* Button visited */
 .btn {
